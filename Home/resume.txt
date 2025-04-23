@@ -1,5 +1,5 @@
 
-                                                                                   RESUME
+                                                                   RESUME
 
 NAME : ANUJ SINGH BISHT
 
@@ -15,15 +15,20 @@ I want this job in order to sharpen my skills. And learn more abut Full-stack We
 
 EDUCATION QUALIFICATION
 
-High School- (Central Board Of Secondary Education) CBSE
-DBSA- (Data Base System Assistant) M.E.R.I.T
+    BCA (Bachlor Of Computer Application)   (pursuing)
+    High School- (Central Board Of Secondary Education) CBSE
+    DBSA- (Data Base System Assistant) M.E.R.I.T   (pursuing)
 
 SKILLS
 
     Microsoft Office
+    Operating System (Windows 7,10,11)
+    Linux Operating System
     HTML (Hyper Text Markup Language)
     CSS (Casting Style Sheets)
-    Operating System (Windows 7,10,11)
+    JS (JavaScript)
+    C Language
+    Python Language
 
 STRENGTH (PERSONAL SKILLS)
 
@@ -56,4 +61,3 @@ Declaration
 I hereby declared that all information i mentioned in my resume is for real.
 
 Name: Anuj Singh Bisht
-Sign: 
