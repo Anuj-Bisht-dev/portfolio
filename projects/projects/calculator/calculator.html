@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="complete_calculator">
+        <div id="complete_calculator_again">
+            <nav id="navbar">
+                <div id="calculator_top_first">
+                    <div class="calculator_image"><img src="./image/calculator_img.png" alt="calculator_image"
+                            width="15px"></div>
+                    <div class="calculator_written">Calculator</div>
+                </div>
+                <div id="calculator_top_second">
+                    <div class="minimize_calculator">-</div>
+                    <div class="maximize_calculator">_</div>
+                    <div class="close_calculator">X</div>
+                </div>
+            </nav>
+            <div id="inputs_outputs">
+                <input type="text" id="inputs_outputs_container">
+            </div>
+            <div id="calculator_body">
+                <table id="calculator_table">
+                    <tr>
+                        <td onclick="append('7')">7</td>
+                        <td onclick="append('8')">8</td>
+                        <td onclick="append('9')">9</td>
+                        <td onclick="append('/')">/</td>
+                    </tr>
+                    <tr>
+                        <td onclick="append('4')">4</td>
+                        <td onclick="append('5')">5</td>
+                        <td onclick="append('6')">6</td>
+                        <td onclick="append('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="append('1')">1</td>
+                        <td onclick="append('2')">2</td>
+                        <td onclick="append('3')">3</td>
+                        <td onclick="append('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td onclick="clear_all()">C</td>
+                        <td onclick="append('0')">0</td>
+                        <td onclick="append('*')">*</td>
+                        <td onclick="evaluate_equation()">=</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+</body>
+<!-- <script src="script.js"></script> -->
+<script src="script_1.js"></script>
+
+</html>

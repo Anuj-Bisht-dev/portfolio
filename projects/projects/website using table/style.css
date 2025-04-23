@@ -1,0 +1,55 @@
+body {
+    background-color: lightyellow;
+}
+#para{
+    margin: 0;
+}
+.horizontal{
+    width: 71vw;
+    
+}
+.table_1 {
+    background-color: wheat;
+    width: 70vw;
+}
+
+.text {
+    font-size: small;
+    text-decoration: none;
+}
+
+#first img{
+    position: relative;
+    left: 85vw;
+    bottom: 5vw ;
+}
+
+.first2{
+    position: relative;
+    bottom: 30px;
+    font-size: 20px;
+}
+.topp {
+    position: relative;
+    top: 20px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+.table_2{
+    background-color: wheat;
+    width: 40vw;
+}
+#img{
+    position: relative;
+    bottom: 50px;
+}
+#para{
+    margin-bottom:0 ;
+}
+#name{
+    background-color: wheat;
+    border: 1px solid black;
+}

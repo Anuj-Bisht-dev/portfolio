@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background: url(/projects/project_images/background_image.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.backside_video{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+/* Container Styles */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 100px;
+    cursor: pointer;
+}
+
+/* Projects Styles */
+.projects {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin: 40px 0;
+    box-shadow: 0 0 20px rgb(99, 13, 99);
+    border-radius: 5px;
+    transform-style: preserve-3d; /* Ensures 3D effect on the individual projects */
+    transition: transform 0.7s linear;
+}
+
+.projects:hover {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.backside{
+    transform: rotateY(180deg);
+}
+/* Front Side of the Project */
+.frontside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Back Side of the Project */
+.backside {
+    box-shadow: 0 0 20px rgb(99, 13, 99);
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, rgb(46, 15, 46), rgb(97, 7, 97), rgb(53, 9, 53), rgb(51, 14, 37));
+    text-align: center;
+}
+
+.backside p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Backside Image */
+.backside_img {
+    width: 70px;
+    margin: 20px 120px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 50px rgb(108, 182, 176);
+    border-radius: 100px;
+}
+
+/* Button Styles on the Back */
+.backside > .btns {
+    margin: 30px 100px;
+    width: 100px;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.backside > .btns:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.backside > .btns > a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Frontside Image */
+.frontside > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
