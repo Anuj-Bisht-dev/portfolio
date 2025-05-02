@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            background-color: black;
+            color: white;
+        }
+
+        #container {
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            background-color: black;
+            border-radius: 5px;
+            box-shadow: 0 0 50px rgb(214, 9, 214);
+        }
+
+        .image {
+            margin-left: 2px;
+        }
+
+        p {
+            display: flex;
+            margin-left: 15px;
+            font-size: 13px;
+        }
+  
+        #main {
+            display: flex;
+            flex-direction: row;
+            margin-top: 3px;
+        }
+
+        #btn {
+            display: flex;
+            margin-left: 305px;
+            gap: 5px;
+
+        }
+
+        #btn button {
+            width: 20px;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 15px;
+            border-radius: 2px;
+        }
+
+        #btn button:hover {
+            background-color: red;
+        }
+
+        #btn_1 {
+            display: flex;
+            gap: 5px;
+            margin-left: 5px;
+        }
+
+        #btn_1 button {
+            margin-left: 3px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            width: 30px;
+        }
+
+        #btn_1 button:hover {
+            background-color: gray;
+            border-radius: 2px;
+        }
+
+        .setting {
+            display: flex;
+            justify-content: center;
+            margin-left: 360px;
+            font-size: 15px;
+            margin-top: 10px;
+            width: 20px;
+            border-radius: 2px;
+        }
+
+        .setting:hover {
+            background-color: gray;
+        }
+
+        #bands {
+            display: flex;
+            gap: 5px;
+        }
+
+        textarea {
+            cursor: default;
+            background-color: gray;
+            width: 499px;
+            border-bottom: 5px;
+            border: none;
+            height: 300px;
+            margin-top: 2px;
+            color: white;
+        }
+
+        /* to avoid pop effect onclick */
+        textarea:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="main">
+            <div class="image">
+                <img src="Notepad.png" alt="Notepad" width="18px">
+            </div>
+            <p>Utitled-Notepad</p>
+            <div id="btn">
+                <div class="click">
+                    <button>_</button>
+                    <button>-</button></div>
+                    <button>x</button>
+            </div>
+        </div>
+        <div id="bands">
+            <div id="btn_1">
+                <button>File</button>
+                <button>Edit</button>
+                <button>View</button>
+            </div>
+            <div class="setting">*</div>
+        </div>
+        <div class="text">
+            <textarea></textarea>
+        </div>
+    </div>
+</body>
+</html>
