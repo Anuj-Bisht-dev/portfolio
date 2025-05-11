@@ -43,7 +43,7 @@ body {
 .rightnav ul {
     display: flex;
     margin-left: 600px;
-    gap: 40px;
+    gap: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -57,7 +57,7 @@ body {
     text-decoration: none;
 }
 
-.rightnav ul li a{
+.rightnav ul li a {
     color: white;
     text-decoration: none;
 }
@@ -114,7 +114,7 @@ h4::before {
     0% {
         width: 0;
     }
-    
+
     100% {
         width: 100%;
     }
@@ -149,7 +149,7 @@ h4::before {
     box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.334);
 }
 
-.input> img {
+.input>img {
     width: 50px;
     height: 50px;
 }
@@ -167,11 +167,44 @@ h4::before {
     position: absolute;
     text-decoration: underline;
     font-size: 30px;
-    margin: 60px 0 0 800px;
+    margin: 60px 0 0 640px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:white;
+    color: white;
 }
-
+.slide-up-contact{
+    color: white;
+    position: absolute;
+    margin: 49px 0 0 1150px;
+    font-size: 32px;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    font-weight: bolder;
+    overflow: hidden;
+}
+.slide-up-contact > ul{
+    list-style: none;
+    font-family: serif ;
+    background: linear-gradient(120deg, #764BA2 ,#667EEA);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.slide-up-contact > ul > li{
+    animation: slide-up 8s infinite;
+}
+@keyframes slide-up {
+    0%, 20%{
+        transform: translateY(0%);
+    }
+    20%, 35%{
+        transform: translateY(-100%);
+    }
+    35%, 50%{
+        transform: translateY(-200%);
+    }
+    50%, 65%{
+        transform: translateY(-300%);
+    }
+}
 #contact {
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
@@ -183,16 +216,15 @@ h4::before {
     height: 320px;
     margin-left: 100px;
     margin-bottom: 20px;
-    box-shadow: 0 0 20px rgb(1, 110, 213)
-    ;
+    box-shadow: 0 0 20px rgb(1, 110, 213);
     background-color: rgba(0, 0, 0, 0.505);
     gap: 3px;
-    color:white;
-    color:white;
+    color: white;
+    color: white;
 }
 
 #contact>input {
-    color:white;
+    color: white;
     background: transparent;
     border: none;
     border-bottom: 1px solid white;
@@ -202,12 +234,14 @@ h4::before {
 #contact>textarea {
     background: transparent;
     border: 1px solid white;
-    color:white;
+    color: white;
     outline: none;
 }
-#comment{
+
+#comment {
     margin-top: 10px;
 }
+
 .contact_sumit {
     padding: 5px;
     width: 100px;
