@@ -95,7 +95,7 @@ body {
   width: 500px;
   cursor: pointer;
   left: 50%;
-  transform: translateX(56%);
+  transform: translateX(59%);
   margin: -50px 0 0 0;
 }
 
@@ -428,5 +428,6 @@ body {
   height: 40px;
   width: 45px;
 } */
+
 
 
