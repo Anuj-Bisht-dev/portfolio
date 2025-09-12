@@ -174,7 +174,7 @@ body {
 }
 
 .rightsection .input {
-  background: url('/image/download_icon.gif');
+  background: url('./image/download_icon.gif');
   background-size: 90%;
   background-position-y: -10px;
   display: flex;
