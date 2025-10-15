@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+@tailwindcss utilities;
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@layer components {
+  .navbar {
+    @apply flex-center border-white/20 border gap-x-13 mt-14 w-[720px] flex-wrap mx-auto rounded-4xl p-0.5 text-2xl h-[65px] sticky z-10 top-10 py-0.5 shadow-[0_0_80px_rgba(255,255,255,0.2)] bg-black/50;
+  }
+
+  .hover-nav-text {
+    @apply before:content-[''] before:bottom-0 before:absolute before:h-[1.5px] before:bg-purple-500 before:scale-0 before:opacity-0 hover:before:scale-100 hover:before:opacity-100 before:duration-300 hover:text-purple-400;
+  }
+
+  .main-portfolio-image{
+    @apply relative before:content-[''] before:w-[650px] before:h-[650px] before:absolute before:-z-[1] before:bg-blue-400/40 before:border-2 before:rounded-2xl before:rotate-z-45 before:top-[100px] before:left-[165px] after:shadow-[0_0_40px_rgba(0,0,255,0.5)] mt-30 after:absolute after:w-[550px] after:h-[550px] after:content-[''] after:bg-blue-700/50 after:-z-[2] after:border-2 after:border-blue-600 after:rounded-full after:-top-[100px] after:left-[220px] animate-up-down;
+  }
+
+  .project-front-section{
+    @apply border border-yellow-300 w-[460px] h-[300px] flex items-center justify-center flex-col gap-y-12 duration-300;
+  }
+  .project-back-section{
+    @apply w-[460px] h-[300px] absolute top-0 left-0 duration-300 -translate-x-[460px];
+  }
+}
+
+
+
+@theme{
+  --animate-up-down: up-down 3s ease-in-out infinite;
+  @keyframes up-down{
+    0%{
+      transform: translateY(-12px);
+    }
+    50%{
+      transform: translateY(12px);
+    }
+    100%{
+      transform: translateY(-12px)
+    }
+  }
+}
