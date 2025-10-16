@@ -34,7 +34,7 @@ jobs:
       - name: Prepare dist folder
         run: |
           mkdir -p dist
-          cp Home/*.html dist/
+          cp *.html dist/
           cp -r assets dist/ || true
 
       - name: Upload artifact
