@@ -35,6 +35,7 @@ jobs:
         run: |
           mkdir -p dist
           cp index.html dist/
+          cp script.js dist/
           cp -r assets dist/ || true
 
       - name: Upload artifact
