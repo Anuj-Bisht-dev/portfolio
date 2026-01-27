@@ -73,7 +73,7 @@
     }
   }
 
-  --animate-fade-in: fade-in 0.75s ease-in;
+  --animate-fade-in: fade-in 1s ease-in;
   @keyframes fade-in {
     0% {
       opacity: 0;
@@ -81,7 +81,7 @@
     }
     100% {
       opacity: 1;
-      transform: -translatey(50px);
+      transform: translatey(0px);
     }
   }
 }
