@@ -17,7 +17,7 @@
     <header>
         <section class="top-0 fixed w-full z-10">
             <nav
-                class="flex justify-between border-b-2 border-white/10 shadow-[0_10px_40px_rgba(255,255,255,0.1)] px-6 py-2 bg-purple-900/20 backdrop-blur-lg">
+                class="flex justify-between border-b-2 border-white/10 shadow-[0_10px_40px_rgba(255,255,255,0.1)] px-6 py-2 bg-violet-900/10 backdrop-blur-lg">
                 <div class="leftnav_1">
                     <img loading="lazy" src="assets/image/logo_1.png" alt="portfolio_logo"
                         class="w-[80px] h-[80px] rounded-full border-purple-200 border p-1 cursor-pointer">
@@ -29,38 +29,39 @@
                 <div>
                     <button id="navbar_list_button">
                         <img loading="lazy" src="assets/image/list-dash.svg" alt="menu-icon"
-                            class="bg-purple-400/60 w-[50px] rounded-full p-2 mt-3 animate-one-round cursor-pointer"
+                            class="bg-blue-600/60 w-[50px] rounded-full p-2 mt-3 animate-one-round cursor-pointer"
                             id="navbar-default-button">
                         <img loading="lazy" src="assets/image/cross-button.svg" alt="close-menu-icon"
-                            class="bg-purple-400/60 w-[50px] rounded-full mt-3 hidden animate-one-round cursor-pointer"
+                            class="bg-blue-600/60 w-[50px] rounded-full mt-3 hidden animate-one-round cursor-pointer"
                             id="navbar-custom-button">
                     </button>
                 </div>
                 <div class="absolute top-24 right-0">
                     <div id="navbar_list_elements" class="relative">
                         <ul
-                            class="text-purple-500 rounded-b-md text-2xl h-60 flex-col flex-center gap-y-2 w-40 -z-[1] overflow-hidden cursor-pointer">
-                            <a href="index.html">
-                                <button class="border w-30 px-2 py-0.5 flex-center duration-300 translate-x-[160px]"
+                            class="text-purple-500 rounded-b-md text-3xl h-60 flex-col flex-center gap-y-3 w-44 -z-[1] overflow-hidden cursor-pointer">
+                            <a href="#home-page">
+                                <button
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-[160px] rounded-md"
                                     id="nav_home_link">Home
                                 </button>
                             </a>
                             <a href="#project_section">
                                 <button
-                                    class="border w-30 px-2 py-0.5 flex-center duration-300 cursor-pointer translate-x-[160px]"
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-[160px] rounded-md"
                                     id="nav_project_link">Project
                                 </button>
                             </a>
                             <a href="#about_section">
                                 <button
-                                    class="border w-30 px-2 py-0.5 flex-center duration-300 cursor-pointer translate-x-[160px]"
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-[160px] rounded-md"
                                     id="nav_about_link">
                                     About
                                 </button>
                             </a>
                             <a href="#contact_section">
                                 <button
-                                    class="border w-30 px-2 py-0.5 flex-center duration-300 cursor-pointer translate-x-[160px]"
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-[160px] rounded-md"
                                     id="nav_contact_link">Contact
                                 </button>
                             </a>
@@ -72,8 +73,7 @@
     </header>
 
     <main>
-        <section class="mt-40">
-
+        <section class="mt-40" id="home-page">
             <div class="flex flex-col gap-y-16">
                 <div class="flex flex-col gap-y-10 ml-20">
                     <section class="bg-white/70 flex-center w-[350px] h-[140px] gap-x-4 p-2 rounded-2xl cursor-pointer">
@@ -274,12 +274,47 @@
                 </aside>
             </div>
 
-            <aside>
 
-            </aside>
+            <section class="mt-56 flex-center flex-col font-bold m-auto min-w-screen">
+                <h3 class="text-6xl">Skills and Expertes</h3>
+
+                <article class="text-2xl font-semibold flex-center flex-wrap gap-x-36 font-mono w-[550px]">
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/git.png" alt="git-logo"
+                            class="w-[150px] h-[150px] mt-20 mb-10 bg-blue-400/10 rounded-full p-3">
+                        <h5>Git</h5>
+                    </aside>
+
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/mysql.png" alt="mysql-logo"
+                            class="w-[150px] h-[150px] mt-20 mb-10 bg-blue-400/10 rounded-full p-2">
+                        <h5>MySql</h5>
+                    </aside>
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading=" lazy" src="assets/image/nodejs-image.png" alt="nodejs-logo"
+                            class="w-[150px] h-[150px] mt-20 mb-10 bg-blue-400/10 rounded-full p-3">
+                        <h5>NodeJs</h5>
+                    </aside>
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/Tailwind_CSS.png" alt="tailwind-css-logo"
+                            class="w-[150px] h-[150px] mt-20 mb-10 bg-blue-400/10 rounded-full p-3 py-7">
+                        <h5>Tailwind CSS</h5>
+                    </aside>
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/typescript.png" alt="typescript-logo"
+                            class="w-[150px] h-[150px] mt-20 mb-10 bg-blue-400/10 rounded-full p-3">
+                        <h5>TypeScript</h5>
+                    </aside>
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/reactjs.png" alt="reactjs-logo"
+                            class="w-[150px] h-[150px] mt-20 mb-10 bg-blue-400/10 rounded-full p-3">
+                        <h5>ReactJs</h5>
+                    </aside>
+                </article>
+            </section>
         </section>
 
-        <section id="contact_section" class="mt-80 flex-center flex-col">
+        <section id="contact_section" class="mt-60 flex-center flex-col">
             <aside class="text-6xl font-black w-[500px] mb-[100px]">
                 <p class="text-gray-400 inline">Have a break</p> <img loading="lazy"
                     src="assets/image/coffee-images.png" alt="coffee-break-icon" class="w-14 inline flex-center pb-4">
