@@ -84,5 +84,6 @@ for (let section of allSections) {
     observe.observe(section);
 }
 
+// add contrast on skill and experties section
 
 

@@ -18,11 +18,11 @@
 
 @layer components {
   .navbar {
-    @apply flex-center border-white/20 border gap-x-13 mt-14 w-[720px] flex-wrap mx-auto rounded-4xl p-0.5 text-2xl h-[65px] sticky z-10 top-10 py-0.5 shadow-[0_0_100px_rgba(255,255,255,0.1)] bg-black/50;
+    @apply flex-center border-white/20 border gap-x-13 mt-14 w-180 flex-wrap mx-auto rounded-4xl p-0.5 text-2xl h-16.25 sticky z-10 top-10 py-0.5 shadow-[0_0_100px_rgba(255,255,255,0.1)] bg-black/50;
   }
 
   .home-info {
-    @apply text-black text-[26px] before:content-[''] before:h-[60px] before:w-[60px] before:absolute before:bg-gray-300/60 before:-right-[400px] relative before:top-20 before:rounded-full before:animate-up-down font-semibold after:absolute after:w-[200px] after:h-[200px] after:bg-pink-600/90 after:blur-[200px] after:shadow-[0_0_200px_rgb(200,0,0)] after:-z-[100] after:-right-[250px] after:rounded-full;
+    @apply text-black text-[26px] before:content-[''] before:h-15 before:w-15ore:absolute before:bg-gray-300/60 before:-right-100 relative before:top-20 before:rounded-full before:animate-up-down font-semibold after:absolute after:w-50 after:h-50 after:bg-pink-600/90 after:blur-[200px] after:shadow-[0_0_200px_rgb(200,0,0)] after:-z-100 after:-right-62.5 after:rounded-full;
   }
 
   .hover-nav-text {
@@ -30,15 +30,15 @@
   }
 
   .main-portfolio-image {
-    @apply relative before:content-[''] before:w-[650px] before:h-[650px] before:absolute before:-z-[1] before:bg-blue-400/40 before:border-2 before:rounded-2xl before:rotate-z-45 before:top-[100px] before:left-[165px] after:shadow-[0_0_40px_rgba(0,0,255,0.5)] mt-30 after:absolute after:w-[550px] after:h-[550px] after:content-[''] after:bg-blue-700/50 after:-z-[2] after:border-2 after:border-blue-600 after:rounded-full after:-top-[100px] after:left-[220px] animate-up-down;
+    @apply relative before:content-[''] before:w-162.5 before:h-162.5 before:absolute before:-z-1 before:bg-blue-400/40 before:border-2 before:rounded-2xl before:rotate-z-45 before:top-25 before:left-41.25 after:shadow-[0_0_40px_rgba(0,0,255,0.5)] mt-30 after:absolute after:w-137.5 after:h-137.5 after:content-[''] after:bg-blue-700/50 after:-z-2 after:border-2 after:border-blue-600 after:rounded-full after:-top-25 after:left-55 animate-up-down;
   }
 
   .project-front-section {
-    @apply border border-yellow-300 w-[460px] h-[300px] flex items-center justify-center flex-col gap-y-8 duration-500;
+    @apply border border-yellow-300 w-115 h-75 flex items-center justify-center flex-col gap-y-8 duration-500;
   }
 
   .project-back-section {
-    @apply w-[460px] h-[300px] absolute top-0 left-0 duration-500 -translate-x-[460px];
+    @apply w-115 h-75 absolute top-0 left-0 duration-500 -translate-x-115;
   }
 
   .button {
@@ -70,7 +70,7 @@
     }
   }
 
-  --animate-fade-in: fade-in 1s ease-in;
+  --animate-fade-in: fade-in 1.25s ease-in;
   @keyframes fade-in {
     0% {
       opacity: 0;

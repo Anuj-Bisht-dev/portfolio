@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Anuj-Bisht-dev/portfolio#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.14",
-    "tailwindcss": "^4.1.14"
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
   }
 }
