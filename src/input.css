@@ -22,7 +22,7 @@
   }
 
   .home-info {
-    @apply text-black text-[26px] before:content-[''] before:h-15 before:w-15ore:absolute before:bg-gray-300/60 before:-right-100 relative before:top-20 before:rounded-full before:animate-up-down font-semibold after:absolute after:w-50 after:h-50 after:bg-pink-600/90 after:blur-[200px] after:shadow-[0_0_200px_rgb(200,0,0)] after:-z-100 after:-right-62.5 after:rounded-full;
+    @apply text-black text-[26px] before:content-[''] before:h-15 before:w-15 before:absolute before:bg-gray-300/60 before:-right-100 relative before:top-20 before:rounded-full before:animate-up-down font-semibold after:absolute after:w-50 after:h-50 after:bg-pink-600/90 after:blur-[200px] after:shadow-[0_0_200px_rgb(200,0,0)] after:-z-100 after:-right-62.5 after:rounded-full;
   }
 
   .hover-nav-text {

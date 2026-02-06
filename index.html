@@ -12,21 +12,23 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-[#050b18] text-white selection:bg-orange-600/70">
+<body class="bg-[#050b18] text-white selection:bg-orange-600/70 xl:bg-gray-950">
 
-    <header>
-        <section class="top-0 fixed w-full z-10">
+    <header class="xl:flex-center">
+        <section class="top-0 fixed w-full z-10 xl:w-3/5" id="nav-section">
             <nav
-                class="flex justify-between border-b-2 border-white/10 shadow-[0_10px_40px_rgba(255,255,255,0.1)] px-6 py-2 bg-violet-900/10 backdrop-blur-lg">
+                class="flex justify-between border-b-2 border-white/10 shadow-[0_10px_40px_rgba(255,255,255,0.1)] px-6 py-2 bg-violet-900/10 backdrop-blur-xl xl:shadow-none xl:bg-transparent  xl:justify-between xl:rounded-full xl:border-none xl:px-10">
+
                 <div class="leftnav_1">
-                    <img loading="lazy" src="assets/image/logo_1.png" alt="portfolio_logo"
-                        class="w-20 h-20 rounded-full border-purple-200 border p-1 cursor-pointer">
+                    <img loading="lazy" src="assets/image/logo_1.png" alt="portfolio_logo" id="nav-section-image"
+                        class="w-20 h-20 xl:h-15 xl:w-15 rounded-full border-purple-200 border p-1 cursor-pointer xl:p-0 xl:border-2 xl:border-black">
                 </div>
                 <div
                     class="leftnav_2 text-5xl pt-4 text-white font-dancingScript tracking-[5px] font-bold cursor-pointer">
                     <h1>Welcome in My Portfolio</h1>
                 </div>
-                <div>
+
+                <div class="xl:hidden">
                     <button id="navbar_list_button">
                         <img loading="lazy" src="assets/image/list-dash.svg" alt="menu-icon"
                             class="bg-blue-600/60 w-12.5 rounded-full p-2 mt-3 animate-one-round cursor-pointer"
@@ -36,36 +38,37 @@
                             id="navbar-custom-button">
                     </button>
                 </div>
-                <div class="absolute top-24 right-0">
-                    <div id="navbar_list_elements" class="relative">
-                        <ul
-                            class="text-purple-500 rounded-b-md text-3xl h-60 flex-col flex-center gap-y-3 w-44 -z-1 overflow-hidden cursor-pointer">
+
+                <div class="absolute top-24 right-0 xl:right-auto xl:static xl:top-auto">
+                    <div id="navbar_list_elements" class="relative xl:static">
+                        <aside
+                            class="text-purple-500 rounded-b-md text-2xl h-60 flex-col flex-center gap-y-3 w-44 -z-1 overflow-hidden cursor-pointer xl:text-white xl:flex-row xl:overflow-visible xl:h-full xl:gap-x-3 xl:mr-60 xl:mt-4 xl:text-xl">
                             <a href="#home-page">
                                 <button
-                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md"
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md xl:translate-x-0 xl:border-0 xl:py-0 xl:px-0 xl:hover:text-purple-600 xl:hover:font-semibold xl:hover:duration-1000"
                                     id="nav_home_link">Home
                                 </button>
                             </a>
                             <a href="#project_section">
                                 <button
-                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md"
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md xl:translate-x-0 xl:border-0 xl:py-0 xl:px-0 xl:hover:text-purple-600"
                                     id="nav_project_link">Project
                                 </button>
                             </a>
                             <a href="#about_section">
                                 <button
-                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md"
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md xl:translate-x-0 xl:border-0 xl:py-0 xl:px-0 xl:hover:text-purple-600"
                                     id="nav_about_link">
                                     About
                                 </button>
                             </a>
                             <a href="#contact_section">
                                 <button
-                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md"
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md xl:translate-x-0 xl:border-0 xl:py-0 xl:px-0 xl:hover:text-purple-600"
                                     id="nav_contact_link">Contact
                                 </button>
                             </a>
-                        </ul>
+                        </aside>
                     </div>
                 </div>
             </nav>
@@ -114,8 +117,7 @@
             <article class="project_div_class relative overflow-hidden">
                 <div class="project-front-section" onclick="projectFrontClickEffect()">
                     <h4 class="font-bold text-4xl">Weather Prediction</h4>
-                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image"
-                        class="w-25">
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
                     <p class="text-xl text-white/70">Get real-time weather updates for your city</p>
                     <button class="button"><a href="">View</a></button>
                 </div>
@@ -128,8 +130,7 @@
             <article class="project_div_class relative overflow-hidden">
                 <div class="project-front-section" onclick="projectFrontClickEffect()">
                     <h4 class="font-bold text-4xl">Task Reminder</h4>
-                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image"
-                        class="w-25">
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
                     <p class="text-xl text-white/70">Organize your day, one task at a time</p>
                     <button class="button"><a href="">View</a></button>
                 </div>
@@ -142,8 +143,7 @@
             <article class="project_div_class relative overflow-hidden">
                 <div class="project-front-section" onclick="projectFrontClickEffect()">
                     <h4 class="font-bold text-4xl">Adobe Pdf Merger</h4>
-                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image"
-                        class="w-25">
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
                     <p class="text-xl text-white/70 mx-20 text-center">A fully functional pdf Adobe pdf merger clone
                     </p>
                     <button class="button"><a href="">View</a></button>
@@ -157,8 +157,7 @@
             <article class="project_div_class relative overflow-hidden">
                 <div class="project-front-section" onclick="projectFrontClickEffect()">
                     <h4 class="font-bold text-4xl">Notepad</h4>
-                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image"
-                        class="w-25">
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
                     <p class="text-xl text-white/70">A simple space for all your notes</p>
                     <button class="button"><a href="">View</a></button>
                 </div>
@@ -171,8 +170,7 @@
             <article class="project_div_class relative overflow-hidden">
                 <div class="project-front-section" onclick="projectFrontClickEffect()">
                     <h4 class="font-bold text-4xl">Login Page</h4>
-                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image"
-                        class="w-25">
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
                     <p class="text-xl text-white/70">Access your dashboard securely</p>
                     <button class="button"><a href="">View</a></button>
                 </div>
@@ -185,8 +183,7 @@
             <article class="project_div_class relative overflow-hidden">
                 <div class="project-front-section" onclick="projectFrontClickEffect()">
                     <h4 class="font-bold text-4xl">Dewali Card</h4>
-                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image"
-                        class="w-25">
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
                     <p class="text-xl text-white/70">Let the lights go to new beginnings</p>
                     <button class="button"><a href="">View</a></button>
                 </div>
@@ -199,8 +196,7 @@
             <article class="project_div_class relative overflow-hidden">
                 <div class="project-front-section">
                     <h4 class="font-bold text-4xl">Simple Calculator</h4>
-                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image"
-                        class="w-25">
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
                     <p class="text-xl text-white/70 px-10">A lightweight calculator made with HTML, CSS, and JavaScript
                     </p>
                     <button class="button"><a href="">View</a></button>
@@ -226,8 +222,7 @@
                     <div>
                         <div class="absolute w-6.25 h-6.25 top-7.5 left-32.5 bg-gray-200 rounded-full">
                         </div>
-                        <div
-                            class="absolute w-1.25 h-45 -top-33.75 left-24.25 bg-gray-200 rounded-full -rotate-z-25">
+                        <div class="absolute w-1.25 h-45 -top-33.75 left-24.25 bg-gray-200 rounded-full -rotate-z-25">
                         </div>
                         <div class="absolute text-3xl -top-42.5 -left-7.5">
                             <p>Material UI Shadcn</p>
@@ -244,8 +239,7 @@
                 <div>
                     <div class="top-11.25 left-180 absolute w-6.25 h-6.25 bg-gray-200 rounded-full">
                     </div>
-                    <div
-                        class="absolute w-1.25 h-35 -top-17.5 left-195.75 bg-gray-200 rounded-full rotate-z-45">
+                    <div class="absolute w-1.25 h-35 -top-17.5 left-195.75 bg-gray-200 rounded-full rotate-z-45">
                     </div>
                     <div class="absolute text-3xl -top-23.75 left-190">
                         <p>TypeScript</p>
@@ -256,8 +250,7 @@
                 <div>
                     <div class="absolute w-6.25 h-6.25 top-82.5 left-220 bg-gray-200 rounded-full">
                     </div>
-                    <div
-                        class="absolute w-1.25 h-50 -bottom-15 left-218.75 bg-gray-200 rounded-full rotate-z-10">
+                    <div class="absolute w-1.25 h-50 -bottom-15 left-218.75 bg-gray-200 rounded-full rotate-z-10">
                     </div>
                     <div class="absolute text-3xl -bottom-23.75 left-200">
                         <p>ReactJs</p>

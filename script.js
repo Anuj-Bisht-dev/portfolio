@@ -84,6 +84,13 @@ for (let section of allSections) {
     observe.observe(section);
 }
 
-// add contrast on skill and experties section
+// script for large screen
 
-
+const navSection = document.getElementById("nav-section");
+const homeSection = document.getElementById("home-page");
+window.onscroll.addEventListener(() => {
+    if (window == navSection) {
+        navSection.classList.remvove("xl:z-10");
+    }
+    navSection.classList.add("xl:z-10");
+});
