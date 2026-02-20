@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Anuj Singh Bisht</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Dancing+Script:wght@400..700&family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#050b18] text-white selection:bg-orange-600/70 xl:bg-gray-950">
+
+    <header class="">
+        <section class="top-0 fixed w-full z-10" id="nav-section">
+            <nav
+                class="flex justify-between border-b-2 border-white/10 shadow-[0_10px_40px_rgba(255,255,255,0.1)] px-6 py-2 bg-violet-900/10 backdrop-blur-xl">
+
+                <div class="leftnav_1">
+                    <img loading="lazy" src="assets/image/logo_1.png" alt="portfolio_logo" id="nav-section-image"
+                        class="w-20 h-20 rounded-full border-purple-200 border p-1 cursor-pointer">
+                </div>
+                <div
+                    class="leftnav_2 text-5xl pt-4 text-white font-dancingScript tracking-[5px] font-bold cursor-pointer">
+                    <h1>Welcome in My Portfolio</h1>
+                </div>
+
+                <div class="">
+                    <button id="navbar_list_button">
+                        <img loading="lazy" src="assets/image/list-dash.svg" alt="menu-icon"
+                            class="bg-blue-600/60 w-12.5 rounded-full p-2 mt-3 animate-one-round cursor-pointer"
+                            id="navbar-default-button">
+                        <img loading="lazy" src="assets/image/cross-button.svg" alt="close-menu-icon"
+                            class="bg-blue-600/60 w-12.5 rounded-full mt-3 hidden animate-one-round cursor-pointer"
+                            id="navbar-custom-button">
+                    </button>
+                </div>
+
+                <div class="absolute top-24 right-0">
+                    <div id="navbar_list_elements" class="relative">
+                        <aside
+                            class="text-purple-500 rounded-b-md text-2xl h-60 flex-col flex-center gap-y-3 w-44 -z-1 overflow-hidden cursor-pointer">
+                            <a href="#home-page">
+                                <button
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md"
+                                    id="nav_home_link">Home
+                                </button>
+                            </a>
+                            <a href="#project_section">
+                                <button
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md"
+                                    id="nav_project_link">Project
+                                </button>
+                            </a>
+                            <a href="#about_section">
+                                <button
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md"
+                                    id="nav_about_link">
+                                    About
+                                </button>
+                            </a>
+                            <a href="#contact_section">
+                                <button
+                                    class="border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md"
+                                    id="nav_contact_link">Contact
+                                </button>
+                            </a>
+                        </aside>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="mt-40" id="home-page">
+            <div class="flex flex-col gap-y-16">
+                <div class="flex flex-col gap-y-10 ml-20">
+                    <section class="bg-white/70 flex-center w-87.5 h-35 gap-x-4 p-2 rounded-2xl cursor-pointer">
+                        <img loading="lazy" src="assets/image/newoneimg.svg" alt="greeting-icon-hello" class="w-16">
+                        <div>
+                            <h4 class="text-gray-700 text-4xl">Hello, I am</h4>
+                            <h3 class="text-black font-bold text-[50px] flex pl-16">Anuj</h3>
+                        </div>
+                    </section>
+
+                    <section class="bg-white/80 w-87.5 h-fit p-3 rounded-3xl align-middle ml-36 cursor-pointer">
+                        <h3 class="home-info">
+                            Front-End Web Developer Javascript/Expert</h3>
+                    </section>
+                </div>
+
+                <div class="main-portfolio-image cursor-pointer">
+                    <img loading="lazy" src="assets/image/mobile_profile_image.png" alt="profile_photo"
+                        class="h-250 ml-15 drop-shadow-[0_5px_20px_rgba(0,0,0,0.8)] select-none">
+                </div>
+
+                <article class="relative">
+                    <img loading="lazy" src="assets/image/javascript-logo.png" alt="javascript-logo"
+                        class="w-35 h-35 p-4 absolute left-10 bg-yellow-300/60 rounded-full bottom-20 -rotate-12 animate-up-down cursor-pointer">
+                    <img loading="lazy" src="assets/image/Tailwind_CSS.png" alt="tailwind-css-logo"
+                        class="w-26.25 h-25 p-6 absolute right-52 bg-blue-400/60 rounded-full bottom-48 rotate-12 animate-up-down -z-1 cursor-pointer">
+                    <img loading="lazy" src="assets/image/nodejs-image.png" alt="nodejs-logo"
+                        class="w-30 h-30 absolute right-14 bg-green-300/60 rounded-full bottom-0 p-6 rotate-12 animate-up-down -z-1 cursor-pointer">
+                </article>
+            </div>
+        </section>
+
+        <section id="project_section" class="mt-40 flex-center flex-wrap">
+            <h2
+                class="font-extrabold text-6xl mt-44 mb-20 flex border-4 w-fit px-10 py-5 shadow-[2px_2px_4px_rgb(255,255,255)] after:absolute after:w-45 after:h-45 after:bg-purple-600 after:blur-[200px] after:left-0 after:-z-1">
+                WORK SHOWCASE</h2>
+
+            <article class="project_div_class relative overflow-hidden">
+                <div class="project-front-section" onclick="projectFrontClickEffect()">
+                    <h4 class="font-bold text-4xl">Weather Prediction</h4>
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
+                    <p class="text-xl text-white/70">Get real-time weather updates for your city</p>
+                    <button class="button"><a href="">View</a></button>
+                </div>
+                <div onclick="projectBackClickEffect()">
+                    <img loading="lazy" src="assets/project_pages/weather_application.png"
+                        alt="weather_application_image" class="project-back-section">
+                </div>
+            </article>
+
+            <article class="project_div_class relative overflow-hidden">
+                <div class="project-front-section" onclick="projectFrontClickEffect()">
+                    <h4 class="font-bold text-4xl">Task Reminder</h4>
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
+                    <p class="text-xl text-white/70">Organize your day, one task at a time</p>
+                    <button class="button"><a href="">View</a></button>
+                </div>
+                <div onclick="projectBackClickEffect()">
+                    <img loading="lazy" src="assets/project_pages/to_do_list.png" alt="to_do_list_image"
+                        class="project-back-section">
+                </div>
+            </article>
+
+            <article class="project_div_class relative overflow-hidden">
+                <div class="project-front-section" onclick="projectFrontClickEffect()">
+                    <h4 class="font-bold text-4xl">Adobe Pdf Merger</h4>
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
+                    <p class="text-xl text-white/70 mx-20 text-center">A fully functional pdf Adobe pdf merger clone
+                    </p>
+                    <button class="button"><a href="">View</a></button>
+                </div>
+                <div onclick="projectBackClickEffect()">
+                    <img loading="lazy" src="assets/project_pages/profile.png" alt="profile_image"
+                        class="project-back-section">
+                </div>
+            </article>
+
+            <article class="project_div_class relative overflow-hidden">
+                <div class="project-front-section" onclick="projectFrontClickEffect()">
+                    <h4 class="font-bold text-4xl">Notepad</h4>
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
+                    <p class="text-xl text-white/70">A simple space for all your notes</p>
+                    <button class="button"><a href="">View</a></button>
+                </div>
+                <div onclick="projectBackClickEffect()">
+                    <img loading="lazy" src="assets/project_pages/notepad.png" alt="notepad_image"
+                        class="project-back-section">
+                </div>
+            </article>
+
+            <article class="project_div_class relative overflow-hidden">
+                <div class="project-front-section" onclick="projectFrontClickEffect()">
+                    <h4 class="font-bold text-4xl">Login Page</h4>
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
+                    <p class="text-xl text-white/70">Access your dashboard securely</p>
+                    <button class="button"><a href="">View</a></button>
+                </div>
+                <div onclick="projectBackClickEffect()">
+                    <img loading="lazy" src="assets/project_pages/login_page.png" alt="login_page_image"
+                        class="project-back-section">
+                </div>
+            </article>
+
+            <article class="project_div_class relative overflow-hidden">
+                <div class="project-front-section" onclick="projectFrontClickEffect()">
+                    <h4 class="font-bold text-4xl">Dewali Card</h4>
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
+                    <p class="text-xl text-white/70">Let the lights go to new beginnings</p>
+                    <button class="button"><a href="">View</a></button>
+                </div>
+                <div onclick="projectBackClickEffect()">
+                    <img loading="lazy" src="assets/project_pages/dewali_card.png" alt="dewali_card_image"
+                        class="project-back-section">
+                </div>
+            </article>
+
+            <article class="project_div_class relative overflow-hidden">
+                <div class="project-front-section">
+                    <h4 class="font-bold text-4xl">Simple Calculator</h4>
+                    <img loading="lazy" src="assets/project_pages/zigzag_image.png" alt="zigzag_image" class="w-25">
+                    <p class="text-xl text-white/70 px-10">A lightweight calculator made with HTML, CSS, and JavaScript
+                    </p>
+                    <button class="button"><a href="">View</a></button>
+                </div>
+                <div onclick="projectBackClickEffect()">
+                    <img loading="lazy" src="assets/project_pages/calculator.png" alt="calculator_image"
+                        class="project-back-section">
+                </div>
+            </article>
+        </section>
+
+        <section id="about_section"
+            class="mt-44 relative before:absolute before:h-62.5 before:w-62.5 before:bg-fuchsia-600 before:top-0 before:right-0 before:rounded-full before:blur-[280px] cursor-pointer">
+            <div class="mb-50">
+                <h3 class="flex-center text-[85px] font-bitcount">Know About Me More</h3>
+            </div>
+            <div class="relative">
+                <div id="oval-image-upper1" class="absolute left-25 top-12.5 -z-1">
+                    <img loading="lazy" src="assets/image/ovel-image.png" alt="oval-decorative-shape"
+                        class="w-187.5 h-90 select-none">
+
+                    <!-- pair 1 -->
+                    <div>
+                        <div class="absolute w-6.25 h-6.25 top-7.5 left-32.5 bg-gray-200 rounded-full">
+                        </div>
+                        <div class="absolute w-1.25 h-45 -top-33.75 left-24.25 bg-gray-200 rounded-full -rotate-z-25">
+                        </div>
+                        <div class="absolute text-3xl -top-42.5 -left-7.5">
+                            <p>Material UI Shadcn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="oval-image-upper2" class="absolute left-80 top-12.5">
+                    <img loading="lazy" src="assets/image/ovel-image.png" alt="oval-decorative-shape-second"
+                        class="w-187.5 h-90 select-none">
+                </div>
+
+                <!-- pair 2 -->
+                <div>
+                    <div class="top-11.25 left-180 absolute w-6.25 h-6.25 bg-gray-200 rounded-full">
+                    </div>
+                    <div class="absolute w-1.25 h-35 -top-17.5 left-195.75 bg-gray-200 rounded-full rotate-z-45">
+                    </div>
+                    <div class="absolute text-3xl -top-23.75 left-190">
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+
+                <!-- pair 3 -->
+                <div>
+                    <div class="absolute w-6.25 h-6.25 top-82.5 left-220 bg-gray-200 rounded-full">
+                    </div>
+                    <div class="absolute w-1.25 h-50 -bottom-15 left-218.75 bg-gray-200 rounded-full rotate-z-10">
+                    </div>
+                    <div class="absolute text-3xl -bottom-23.75 left-200">
+                        <p>ReactJs</p>
+                    </div>
+                </div>
+                <div id="know-about-circle">
+                    <img loading="lazy" src="assets/image/about-section-image.png" alt="about-section-image"
+                        class="w-120 my-40 ml-60 select-none">
+                </div>
+                <aside class="absolute w-195 top-87.5 ml-12.5 uppercase">
+                    <p class="text-7xl font-bold font-mono">
+                        Building Programming Skills
+                    </p>
+                </aside>
+            </div>
+
+
+            <section class="mt-56 flex-center flex-col font-bold m-auto min-w-screen">
+                <h3 class="text-6xl">Skills and Expertes</h3>
+
+                <article class="text-2xl font-semibold flex-center flex-wrap gap-x-36 font-mono w-137.5">
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/git.png" alt="git-logo"
+                            class="w-37.5 h-37.5 mt-20 mb-10 bg-blue-400/10 rounded-full animate-up-down p-3 contrast-0"
+                            onclick="classList.toggle('contrast-200')">
+                        <h5>Git</h5>
+                    </aside>
+
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/mysql.png" alt="mysql-logo"
+                            class="w-37.5 h-37.5 mt-20 mb-10 bg-blue-400/10 rounded-full animate-up-down p-2 contrast-0"
+                            onclick="classList.toggle('contrast-150')">
+                        <h5>MySql</h5>
+                    </aside>
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading=" lazy" src="assets/image/nodejs-image.png" alt="nodejs-logo"
+                            class="w-37.5 h-37.5 mt-20 mb-10 bg-blue-400/10 rounded-full p-3 animate-up-down contrast-0"
+                            onclick="classList.toggle('contrast-200')">
+                        <h5>NodeJs</h5>
+                    </aside>
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/Tailwind_CSS.png" alt="tailwind-css-logo"
+                            class="w-37.5 h-37.5 mt-20 mb-10 bg-blue-400/10 rounded-full animate-up-down p-3 py-9 contrast-0"
+                            onclick="classList.toggle('contrast-200')">
+                        <h5>Tailwind CSS</h5>
+                    </aside>
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/typescript.png" alt="typescript-logo"
+                            class="w-37.5 h-37.5 mt-20 mb-10 bg-blue-400/10 rounded-full animate-up-down p-3 contrast-20"
+                            onclick="classList.toggle('contrast-200')">
+                        <h5>TypeScript</h5>
+                    </aside>
+                    <aside class="flex-center flex-col text-3xl font-bold text-white/70">
+                        <img loading="lazy" src="assets/image/reactjs.png" alt="reactjs-logo"
+                            class="w-37.5 h-37.5 mt-20 mb-10 bg-blue-400/10 rounded-full animate-up-down p-3 contrast-0"
+                            onclick="classList.toggle('contrast-200')">
+                        <h5>ReactJs</h5>
+                    </aside>
+                </article>
+            </section>
+        </section>
+
+        <section id="contact_section" class="mt-60 flex-center flex-col">
+            <aside class="text-6xl font-black w-125 mb-25">
+                <p class="text-gray-400 inline">Have a break</p> <img loading="lazy"
+                    src="assets/image/coffee-images.png" alt="coffee-break-icon"
+                    class="w-14 inline flex-center pb-4 select-none">
+                <p class="inline text-violet-500 text-7xl">&</p>
+                <p class="text-blue-200 ml-10">Connect to me</p>
+            </aside>
+            <aside
+                class="flex-center border-6 rounded-4xl px-8 text-3xl text-gray-300 font-semibold bg-pink-300/50 w-fit  mt-20">
+                <img loading="lazy" src="assets/image/email-image.png" alt="email-icon" class="w-37.5 select-none">
+                <p>anujbisth.dev@gmail.com</p>
+            </aside>
+            <aside
+                class="flex-center border-6 rounded-4xl py-4 px-20 text-3xl text-gray-300 font-semibold bg-violet-300/50 w-fit mt-20">
+                <img loading="lazy" src="assets/image/mobile-phone-image.png" alt="mobile-phone-icon"
+                    class="w-25 select-none">
+                <p>+91 9953656739</p>
+            </aside>
+        </section>
+        <section id="queries_section"
+            class="text-5xl text-white relative before:absolute before:content-[''] before:left-10 before:top-10 before:w-48 before:h-48 before:bg-purple-500 before:blur-[160px] before:rounded-full before:-z-10 flex-center flex-col">
+            <div class="flex-center mt-37.5">
+                <p class=" text-6xl inline-block font-semibold flex-center mr-1 font-monoton">
+                    Any
+                </p>
+                <p class="text-6xl font-bold inline-block text-purple-400 font-monoton">Queries</p>
+            </div>
+            <aside class="mt-20"><input type="text" placeholder="Your Name"
+                    class="rounded-3xl text-3xl bg-blue-400/30 w-200 h-25 px-8 outline-0">
+            </aside>
+            <aside class="mt-20"><input type="email" placeholder="Your Email"
+                    class="rounded-3xl text-3xl bg-blue-400/30 w-200 h-25 px-8 outline-0"></aside>
+            <aside class="mt-20"><textarea cols="43" placeholder="Your Message"
+                    class="resize-none rounded-3xl text-3xl bg-blue-400/30 p-8  outline-0"></textarea>
+            </aside>
+            <button class="button py-6 text-white/80 px-8 mt-20 mb-20 text-4xl bg-blue-600/70"
+                id="message_send_button">Send
+                Message</button>
+        </section>
+    </main>
+    <footer class="select-none">
+        <div id="footer_section" class="mt-20">
+            <div class="flex justify-between text-3xl bg-blue-900/20 py-5 px-20 text-white/70">
+                <h3 class="cursor-pointer hover:text-blue-600 hover:underline hover:duration-600">@ 2026 ANUJ SINGH
+                    BISHT</h3>
+                <h3 class="cursor-pointer flex items-center gap-3 hover:text-blue-600 hover:duration-600">
+                    <p class="text-5xl">&copy;</p> All Rights Reserved
+                </h3>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
