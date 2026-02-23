@@ -8,16 +8,16 @@ const navbarCustomBtn = document.getElementById("navbar-custom-button");
 
 navbarListButton.addEventListener("click", () => {
     setTimeout(() => {
-        navbarHomeLink.classList.toggle("translate-x-[160px]");
+        navbarHomeLink.classList.toggle("translate-x-40");
     }, 100)
     setTimeout(() => {
-        navbarProjectLink.classList.toggle("translate-x-[160px]");
+        navbarProjectLink.classList.toggle("translate-x-40");
     }, 250);
     setTimeout(() => {
-        navbarAboutLink.classList.toggle("translate-x-[160px]");
+        navbarAboutLink.classList.toggle("translate-x-40");
     }, 500);
     setTimeout(() => {
-        navbarContactLink.classList.toggle("translate-x-[160px]");
+        navbarContactLink.classList.toggle("translate-x-40");
     }, 750);
 });
 
@@ -53,45 +53,30 @@ const queriesSection = document.getElementById("queries_section");
 
 messageSendingBtn.addEventListener("click", () => {
     setTimeout(() => {
-        messageSendingBtn.classList.add("ml-[375px]");
-        messageSendingBtn.classList.remove("ml-[350px]");
         messageSendingBtn.innerText = "Sending";
+        messageSendingBtn.classList.remove("hover:bg-pink-700/70");
     }, 500);
     setTimeout(() => {
-        queriesSection.classList.add("ml-[120px]");
-        queriesSection.classList.add("mt-20");
+        queriesSection.classList.add("pt-20");
+        queriesSection.classList.add("pb-40");
         queriesSection.innerText = "Thank You For Your Valuable Time!";
     }, 2000);
-    setTimeout(() => {
-        messageSendingBtn.innerText = "Sended";
-        messageSendingBtn.classList.add("pointer-events-none");
-    }, 2500);
 })
 
 
 // let firstSections = document.getElementsByTagName("section")[1];
 
-let allSections = document.getElementsByTagName("section");
-const observe = new IntersectionObserver((entites) => {
-    entites.forEach((value) => {
-        if (value.isIntersecting) {
-            value.target.classList.add("animate-fade-in");
-        }
-    });
-});
+// let allSections = document.getElementsByTagName("section");
+// const observe = new IntersectionObserver((entites) => {
+//     entites.forEach((value) => {
+//         if (value.isIntersecting) {
+//             value.target.classList.add("animate-fade-in");
+//         }
+//     });
+// });
 
-for (let section of allSections) {
-    observe.observe(section);
-}
+// for (let section of allSections) {
+//     observe.observe(section);
+// }
 
-// script for large screen
-
-const navSection = document.getElementById("nav-section");
-const homeSection = document.getElementById("home-page");
-window.onscroll.addEventListener(() => {
-    if (window == navSection) {
-        navSection.classList.remvove("xl:z-10");
-    }
-    navSection.classList.add("xl:z-10");
-});
 

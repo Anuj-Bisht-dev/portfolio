@@ -2,9 +2,9 @@
 @tailwindcss utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Dancing+Script:wght@400..700&family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
+ :root {
   scroll-behavior: smooth;
-}
+} 
 
 @utility flex-center {
   @apply flex justify-center items-center;
@@ -21,8 +21,12 @@
     @apply flex-center border-white/20 border gap-x-13 mt-14 w-180 flex-wrap mx-auto rounded-4xl p-0.5 text-2xl h-16.25 sticky z-10 top-10 py-0.5 shadow-[0_0_100px_rgba(255,255,255,0.1)] bg-black/50;
   }
 
+  .navbar-button {
+    @apply border w-30 px-5 py-0.5 flex-center duration-300 cursor-pointer translate-x-40 rounded-md lg:translate-0 lg:border-0 lg:opacity-80 lg:hover:opacity-100 lg:hover:scale-110 lg:w-40 outline-0;
+  }
+
   .home-info {
-    @apply text-black text-[26px] before:content-[''] before:h-15 before:w-15 before:absolute before:bg-gray-300/60 before:-right-100 relative before:top-20 before:rounded-full before:animate-up-down font-semibold after:absolute after:w-50 after:h-50 after:bg-pink-600/90 after:blur-[200px] after:shadow-[0_0_200px_rgb(200,0,0)] after:-z-100 after:-right-62.5 after:rounded-full;
+    @apply text-black text-[26px] before:content-[''] before:h-15 before:w-15 before:absolute before:bg-gray-300/60 before:-right-100 relative before:top-20 before:rounded-full before:animate-up-down font-semibold after:absolute after:w-50 after:h-50 after:bg-pink-600/90 after:blur-[200px] after:shadow-[0_0_200px_rgb(200,0,0)] after:-z-100 after:-right-62.5 after:rounded-full lg:after:w-100 lg:after:h-100 lg:after:shadow-none lg:after:bg-pink-600/30 lg:after:blur-[400px]  lg:text-lg lg:font-extrabold lg:before:hidden;
   }
 
   .hover-nav-text {
@@ -30,19 +34,27 @@
   }
 
   .main-portfolio-image {
-    @apply relative before:content-[''] before:w-162.5 before:h-162.5 before:absolute before:-z-1 before:bg-blue-400/40 before:border-2 before:rounded-2xl before:rotate-z-45 before:top-25 before:left-41.25 after:shadow-[0_0_40px_rgba(0,0,255,0.5)] mt-30 after:absolute after:w-137.5 after:h-137.5 after:content-[''] after:bg-blue-700/50 after:-z-2 after:border-2 after:border-blue-600 after:rounded-full after:-top-25 after:left-55 animate-up-down;
+    @apply relative before:content-[''] before:w-162.5 before:h-162.5 before:absolute before:-z-1 before:bg-blue-400/40 before:border-2 before:rounded-2xl before:rotate-z-45 before:top-25 before:left-41.25 after:shadow-[0_0_40px_rgba(0,0,255,0.5)] mt-30 after:absolute after:w-137.5 after:h-137.5 after:content-[''] after:bg-blue-700/50 after:-z-2 after:border-2 after:border-blue-600 after:rounded-full after:-top-25 after:left-55 animate-up-down lg:after:hidden lg:before:hidden  ;
   }
 
   .project-front-section {
-    @apply border border-yellow-300 w-115 h-75 flex items-center justify-center flex-col gap-y-8 duration-500;
+    @apply border border-yellow-300 w-115 h-75 flex items-center justify-center flex-col gap-y-8 duration-500 lg:w-125 lg:h-85 lg:font-mono lg:px-5 lg:rounded-sm;
   }
 
   .project-back-section {
-    @apply w-115 h-75 absolute top-0 left-0 duration-500 -translate-x-115;
+    @apply w-115 h-75 absolute top-0 left-0 duration-500 -translate-x-115 lg:-translate-x-150 lg:w-125 lg:h-85;
   }
 
   .button {
-    @apply bg-purple-600/60 text-white/90 py-1.5 px-3 rounded-xl text-2xl font-semibold;
+    @apply bg-purple-600/60 hover:bg-purple-700/50 text-white/90 py-1.5 px-3 rounded-xl text-2xl font-semibold lg:font-mono lg:bg-pink-600/70 lg:hover:bg-pink-700/60 lg:rounded-md lg:py-1 lg:px-4;
+  }
+
+  .skills-icon {
+    @apply flex-center flex-col text-3xl font-bold text-white/70 lg:text-xl;
+  }
+
+  .skills-icon-image{
+    @apply w-37.5 h-37.5 mt-20 mb-10 bg-blue-400/10 rounded-full animate-up-down contrast-0 lg:w-20 lg:h-20 lg:hover:contrast-200 duration-400;
   }
 }
 
