@@ -38,11 +38,11 @@
   }
 
   .project-front-section {
-    @apply border border-yellow-300 w-115 h-75 flex items-center justify-center flex-col gap-y-8 duration-500 lg:w-125 lg:h-85 lg:font-mono lg:px-5 lg:rounded-sm;
+    @apply border border-yellow-300 w-115 h-75 flex items-center justify-center flex-col gap-y-8 duration-500 lg:w-125 lg:h-80 lg:font-mono lg:px-5 lg:rounded-sm;
   }
 
   .project-back-section {
-    @apply w-115 h-75 absolute top-0 left-0 duration-500 -translate-x-115 lg:-translate-x-150 lg:w-125 lg:h-85;
+    @apply w-115 h-75 absolute top-0 left-0 duration-500 -translate-x-115 lg:-translate-x-150 lg:w-125 lg:h-80;
   }
 
   .button {
