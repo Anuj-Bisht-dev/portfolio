@@ -64,19 +64,19 @@ messageSendingBtn.addEventListener("click", () => {
 })
 
 
-// let firstSections = document.getElementsByTagName("section")[1];
+let firstSections = document.getElementsByTagName("section")[1];
 
-// let allSections = document.getElementsByTagName("section");
-// const observe = new IntersectionObserver((entites) => {
-//     entites.forEach((value) => {
-//         if (value.isIntersecting) {
-//             value.target.classList.add("animate-fade-in");
-//         }
-//     });
-// });
+let allSections = document.getElementsByTagName("section");
+const observe = new IntersectionObserver((entites) => {
+    entites.forEach((value) => {
+        if (value.isIntersecting) {
+            value.target.classList.add("animate-fade-in");
+        }
+    });
+});
 
-// for (let section of allSections) {
-//     observe.observe(section);
-// }
+for (let section of allSections) {
+    observe.observe(section);
+}
 
 

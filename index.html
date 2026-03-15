@@ -79,8 +79,8 @@
 
     <main>
         <section class="mt-40 lg:mt-50" id="home-page">
-            <div class="flex flex-col gap-y-16 lg:flex-row">
-                <div class="flex flex-col gap-y-10 ml-20 lg:ml-10">
+            <div class="flex flex-col lg:-mb-145 gap-y-16 lg:flex-row lg:mx-40">
+                <div class="flex flex-col gap-y-10 ml-20 lg:ml-10 lg:relative lg:-top-20">
                     <aside
                         class="bg-white/70 flex-center w-87.5 h-35 gap-x-4 p-2 rounded-2xl cursor-pointer lg:w-60 lg:h-25">
                         <img loading="lazy" src="assets/image/newoneimg.svg" alt="greeting-icon-hello"
@@ -99,28 +99,29 @@
 
                 <div class="main-portfolio-image cursor-pointer">
                     <img loading="lazy" src="assets/image/mobile_profile_image.png" alt="profile_photo"
-                        class="h-250 ml-15 drop-shadow-[0_5px_20px_rgba(0,0,0,0.8)] select-none lg:h-200 lg:ml-10">
+                        class="h-250 ml-15 drop-shadow-[0_5px_20px_rgba(0,0,0,0.8)] select-none lg:h-200 lg:ml-10 lg:relative lg:-top-40">
                     <div class="sm:hidden lg:block lg:w-100 lg:h-100">
                         <img src="assets/image/desktop-home-background.svg" alt="desktop-home-background"
-                            class="absolute ">
+                            class="absolute lg:-top-25 lg:left-20 lg:-z-10 lg:w-150 ">
                     </div>
                 </div>
 
-                <article class="relative">
+                <article class="relative lg:static">
                     <img loading="lazy" src="assets/image/javascript-logo.png" alt="javascript-logo"
-                        class="w-35 h-35 p-4 absolute left-10 bg-yellow-300/60 rounded-full bottom-20 -rotate-12 animate-up-down cursor-pointer">
-                    <img loading="lazy" src="assets/image/Tailwind_CSS.png" alt="tailwind-css-logo"
-                        class="w-26.25 h-25 p-6 absolute right-52 bg-blue-400/60 rounded-full bottom-48 rotate-12 animate-up-down -z-1 cursor-pointer">
+                        class="w-35 h-35 p-4 absolute left-10 bg-yellow-300/60 rounded-full bottom-20 -rotate-12 animate-up-down cursor-pointer lg:left-2/3 lg:bottom-0 lg:top-60 lg:w-22 lg:h-22 lg:p-3">
+                    <img loading="lazy" src="assets/image/reactjs.png" alt="tailwind-css-logo"
+                        class=" h-26 p-4 absolute right-52 bg-blue-400/60 rounded-full bottom-48 rotate-12 animate-up-down -z-1 cursor-pointer lg:right-110 lg:bottom-72">
                     <img loading="lazy" src="assets/image/nodejs-image.png" alt="nodejs-logo"
-                        class="w-30 h-30 absolute right-14 bg-green-300/60 rounded-full bottom-0 p-6 rotate-12 animate-up-down -z-1 cursor-pointer">
+                        class="w-30 h-30 absolute right-14 bg-green-300/60 rounded-full bottom-0 p-6 rotate-12 animate-up-down -z-1 cursor-pointer lg:w-15 lg:h-15 lg:p-3 lg:right-140 lg:bottom-20 ">
                 </article>
             </div>
         </section>
 
-        <section id="project_section" class="mt-40 lg:bg-[#121212] lg:mask-linear-from-100% lg:pb-30">
+
+        <section id="project_section" class="mt-40 lg:mt-0 lg:pt-10 lg:bg-[#121212] lg:mask-linear-from-100% lg:pb-40">
             <div class="flex-center">
                 <h2
-                    class="font-extrabold text-6xl mt-44 mb-20 border-4 w-fit px-10 py-5 shadow-[2px_2px_4px_rgb(255,255,255)] after:absolute after:w-45 after:h-45 after:bg-purple-600 after:blur-[200px] after:left-0 after:-z-10 lg:after:bg-purple-600/60">
+                    class="font-extrabold text-6xl mt-44 mb-20 border-4 w-fit px-10 py-5 shadow-[2px_2px_4px_rgb(255,255,255)] after:absolute after:w-45 after:h-45 after:bg-purple-600 after:blur-[200px] after:left-0 after:-z-10 lg:after:bg-purple-600/30 lg:font-bold lg:text-shadow-[-4px_4px_3px_white]">
                     WORK SHOWCASE</h2>
             </div>
 
@@ -243,7 +244,7 @@
 
 
         <section id="about_section"
-            class="mt-44 w-screen overflow-x-clip relative before:absolute before:h-62.5 before:w-62.5 before:bg-fuchsia-600 before:top-0 before:right-0 before:rounded-full before:blur-[400px] cursor-pointer lg:before:bg-fuchsia-600/60 lg:before:w-120 lg:before:h-120 lg:before:-right-40">
+            class="mt-44 w-screen overflow-x-clip relative before:absolute before:h-62.5 before:w-62.5 before:bg-fuchsia-600 before:top-0 before:right-0 before:rounded-full before:blur-[400px] cursor-pointer lg:before:bg-pink-500/10 lg:before:w-150 lg:before:h-150 lg:before:-right-40 lg:-top-30">
             <div class="mb-50 lg:mb-20">
                 <h3 class="flex-center text-[85px] font-bitcount">Know About Me More</h3>
             </div>
@@ -390,7 +391,7 @@
 
         <section>
             <div id="queries_section"
-                class="text-5xl text-white before:absolute before:content-[''] before:left-10 before:top-10 before:w-48 before:h-48 before:bg-purple-500 before:blur-[160px] before:rounded-full before:-z-10 relative flex-center flex-col lg:bg-[#121212] lg:mask-linear-from-100% lg:static">
+                class="text-5xl text-white before:absolute before:content-[''] before:left-10 before:top-10 before:w-48 before:h-48 before:bg-purple-500 before:blur-[160px] before:rounded-full before:-z-10 relative flex-center flex-col lg:bg-[#121212] lg:before:w-72 lg:before:-top-180 lg:before:left-0 lg:before:bg-fuchsia-500/20 lg:before:blur-[400px]">
                 <div class="flex-center mt-37.5 lg:mt-10">
                     <p class=" text-6xl inline-block font-semibold flex-center mr-1 font-monoton lg:text-5xl">
                         Any
@@ -401,10 +402,10 @@
                     </p>
                 </div>
                 <aside class="mt-20"><input type="text" placeholder="Your Name"
-                        class="rounded-3xl text-3xl lg:autofill:bg-[#121212] autofill:bg-blue-400/30 bg-blue-400/30 w-200 h-25 px-8 outline-0 lg:bg-blue-400/10 lg:text-xl lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:w-240 lg:h-20 lg:rounded-xl lg:placeholder:font-bold lg:p-6">
+                        class="rounded-3xl text-3xl lg:autofill:bg-[#121212] autofill:bg-blue-400/30 bg-blue-400/30 w-200 h-25 px-8 outline-0 lg:bg-blue-400/10 lg:text-xl lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:w-240 lg:h-14 lg:rounded-md lg:placeholder:font-bold lg:p-6">
                 </aside>
                 <aside class="mt-20"><input type="email" placeholder="Your Email"
-                        class="rounded-3xl text-3xl bg-blue-400/30 lg:autofill:bg-[#121212] autofill:bg-blue-400/30 w-200 h-25 px-8 outline-0 lg:bg-blue-400/10 lg:text-xl lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:w-240 lg:h-20 lg:rounded-xl lg:placeholder:font-bold lg:p-6">
+                        class="rounded-3xl text-3xl bg-blue-400/30 lg:autofill:bg-[#121212] autofill:bg-blue-400/30 w-200 h-25 px-8 outline-0 lg:bg-blue-400/10 lg:text-xl lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:w-240 lg:h-14 lg:rounded-md lg:placeholder:font-bold lg:p-6">
                 </aside>
                 <aside class="mt-20"><textarea cols="43" placeholder="Your Message"
                         class="resize-none rounded-3xl text-3xl bg-blue-400/30 autofill:bg-blue-400/30 lg:autofill:bg-[#121212] p-8 outline-0 lg:bg-blue-400/10 lg:text-2xl lg:w-250 lg:h-70 lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:placeholder:font-bold lg:rounded-2xl lg:p-6"></textarea>
@@ -419,7 +420,7 @@
 
     <footer class="select-none">
         <div id="footer_section">
-            <div class="flex justify-between text-3xl bg-blue-900/20 py-5 px-20 lg:bg-blue-900/10 lg:text-xl lg:py-2">
+            <div class="flex justify-between text-3xl bg-blue-900/20 py-5 px-20 lg:bg-black/50 lg:text-xl lg:py-2">
                 <h3 class="cursor-pointer font-semibold text-white/40 ">@ 2026 ANUJ SINGH
                     BISHT</h3>
                 <h3 class="cursor-pointer text-white/70 flex items-center gap-3 lg:text-white/50">
@@ -429,7 +430,7 @@
         </div>
     </footer>
 
-    <script src="/script.js" defer></script>
+    <script src="src/script.js" defer></script>
 </body>
 
 </html>
