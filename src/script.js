@@ -64,7 +64,7 @@ messageSendingBtn.addEventListener("click", () => {
 })
 
 
-let firstSections = document.getElementsByTagName("section")[1];
+// let firstSections = document.getElementsByTagName("section")[0];
 
 let allSections = document.getElementsByTagName("section");
 const observe = new IntersectionObserver((entites) => {

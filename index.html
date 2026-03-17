@@ -48,24 +48,24 @@
                         <aside
                             class="text-purple-500 rounded-b-md text-2xl h-60 flex-col flex-center gap-y-3 w-44 -z-1 overflow-hidden cursor-pointer lg:h-auto lg:flex-row lg:overflow-visible lg:text-xl lg:text-pink-600 lg:font-semibold">
                             <a href="#home-page">
-                                <button class="navbar-button" id="nav_home_link">
+                                <button class="navbar-button translate-x-40 lg:translate-0" id="nav_home_link">
                                     <p class=" hidden lg:inline lg:font-extrabold lg:text-amber-50">01 &nbsp;</p>
                                     Home
                                 </button>
                             </a>
                             <a href="#project_section">
-                                <button class="navbar-button" id="nav_project_link">
+                                <button class="navbar-button translate-x-40 lg:translate-0" id="nav_project_link">
                                     <p class="hidden lg:inline lg:font-extrabold ">02 &nbsp;</p> Project
                                 </button>
                             </a>
                             <a href="#about_section">
-                                <button class="navbar-button" id="nav_about_link">
+                                <button class="navbar-button translate-x-40 lg:translate-0" id="nav_about_link">
                                     <p class="hidden lg:inline lg:font-extrabold lg:text-amber-50">03 &nbsp;</p>
                                     About
                                 </button>
                             </a>
                             <a href="#contact_section">
-                                <button class="navbar-button" id="nav_contact_link">
+                                <button class="navbar-button translate-x-40 lg:translate-0" id="nav_contact_link">
                                     <p class="hidden lg:inline lg:font-extrabold">04 &nbsp;</p> Contact
                                 </button>
                             </a>
@@ -79,8 +79,8 @@
 
     <main>
         <section class="mt-40 lg:mt-50" id="home-page">
-            <div class="flex flex-col lg:-mb-145 gap-y-16 lg:flex-row lg:mx-40">
-                <div class="flex flex-col gap-y-10 ml-20 lg:ml-10 lg:relative lg:-top-20">
+            <div class="flex flex-col lg:-mb-130 gap-y-16 lg:flex-row lg:mx-40">
+                <div class="flex flex-col gap-y-10 ml-20 lg:ml-10 lg:relative lg:-top-20 lg:hidden">
                     <aside
                         class="bg-white/70 flex-center w-87.5 h-35 gap-x-4 p-2 rounded-2xl cursor-pointer lg:w-60 lg:h-25">
                         <img loading="lazy" src="assets/image/newoneimg.svg" alt="greeting-icon-hello"
@@ -97,22 +97,95 @@
                     </aside>
                 </div>
 
+                <!-- // for larger screen  -->
+                <div class="large-screen-div">
+
+                    <h2 class="lg:text-2xl lg:tracking-tighter lg:uppercase lg:font-extrabold lg:text-pink-600 lg:mb-4">anuj singh bisht >
+                    </h2>
+                    <h1 class="lg:text-5xl lg:tracking-tight lg:uppercase lg:font-extrabold lg:inline">front-end
+                        developer</h1>
+                    <h1 class="lg:text-4xl lg:uppercase lg:font-extrabold lg:inline lg:text-pink-600 lg:ml-2">&</h1>
+                    <h1 class="lg:text-4xl lg:tracking-tight lg:uppercase lg:font-extrabold lg:text-pink-600 lg:mt-2">
+                        javascript expert .
+                    </h1>
+                    <p class="lg:font-semibold lg:text-md lg:mt-3 lg:w-120">I build modern and responsive web
+                        applications focused on performance and great UI.
+                    </p>
+                    <aside class="lg:mt-20 lg:flex lg:gap-8">
+                        <a href="#project_section">
+                            <button
+                                class="lg:hover:cursor-pointer lg:flex lg:items-center lg:bg-pink-600/20 lg:border-2 lg:border-pink-600 lg:py-2 lg:px-4 lg:rounded-full">
+                                <img src="assets/image/hero-section-project-btn.gif" alt="view-project-image"
+                                    loading="lazy" class="lg:w-10 lg:h-10">
+                                <p class="lg:font-extrabold">View Project</p>
+                            </button>
+                        </a>
+                        <a href="#contact_section">
+                            <button
+                                class="lg:hover:cursor-pointer lg:bg-pink-600/60 lg:px-8 lg:py-4 lg:rounded-full lg:font-extrabold">Connect
+                                Me </button>
+                        </a>
+                    </aside>
+
+                    <aside class="lg:mt-20 lg:flex lg:gap-6 lg:ml-10 lg:items-center">
+                        <a href="https://www.linkedin.com/in/anuj-singh-bisht-124574361/" target="_blank">
+                            <button>
+                                <img src="assets/image/linkedin.png" alt="linkedIn-logo"
+                                    class="lg:w-12 lg:h-12 lg:bg-pink-600/50 lg:p-2 lg:rounded-full lg:hover:cursor-pointer">
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/Anuj-Bisht-dev" target="_blank">
+                            <button class="lg:w-13 lg:h-12">
+                                <img src="assets/image/Github.png" alt="Github-logo"
+                                    class="lg:w-16 lg:h-12 lg:bg-pink-600/40 lg:py-2 lg:rounded-full lg:hover:cursor-pointer">
+                            </button>
+                        </a>
+
+                        <a href="https://www.instagram.com/anuj_bisht_1/" target="_blank">
+                            <button>
+                                <img src="assets/image/insta.png" alt="Instagram-logo"
+                                    class="lg:w-12 lg:h-12 lg:bg-pink-600/50 lg:p-2 lg:rounded-full lg:hover:cursor-pointer">
+                            </button>
+                        </a>
+
+                        <a href="https://hashnode.com/@anuj1dev" target="_blank">
+                            <button>
+                                <img src="assets/image/hashnode.png" alt="Hashnode-logo"
+                                    class="lg:w-12 lg:h-12 lg:bg-pink-600/50 lg:p-2 lg:rounded-full lg:hover:cursor-pointer">
+                            </button>
+                        </a>
+
+                    </aside>
+                </div>
+
                 <div class="main-portfolio-image cursor-pointer">
-                    <img loading="lazy" src="assets/image/mobile_profile_image.png" alt="profile_photo"
-                        class="h-250 ml-15 drop-shadow-[0_5px_20px_rgba(0,0,0,0.8)] select-none lg:h-200 lg:ml-10 lg:relative lg:-top-40">
-                    <div class="sm:hidden lg:block lg:w-100 lg:h-100">
-                        <img src="assets/image/desktop-home-background.svg" alt="desktop-home-background"
-                            class="absolute lg:-top-25 lg:left-20 lg:-z-10 lg:w-150 ">
+                    <img loading="lazy" src="assets/image/mobile_profile_image.png" alt="profile_photo" loading="lazy"
+                        class="h-250 ml-15 drop-shadow-[0_5px_20px_rgba(0,0,0,0.8)] select-none lg:h-200 lg:ml-10 lg:relative lg:-top-40 lg:hidden animate-up-down">
+
+                    <!-- // for larger screen -->
+                    <img loading="lazy" src="assets/image/hero-section-image.png" alt="profile_photo" loading="lazy"
+                        class="lg:select-none lg:h-180 lg:ml-30 lg:relative lg:-top-40 hidden lg:block lg:rounded-full">
+
+                    <div class="large-screen-hero-section-image-bg">
+
+                        <img src=" assets/image/desktop-home-background.svg" alt="desktop-home-background"
+                            loading="lazy" class="absolute lg:-top-25 lg:left-40 lg:-z-10 lg:w-150 animate-up-down">
                     </div>
                 </div>
 
-                <article class="relative lg:static">
-                    <img loading="lazy" src="assets/image/javascript-logo.png" alt="javascript-logo"
-                        class="w-35 h-35 p-4 absolute left-10 bg-yellow-300/60 rounded-full bottom-20 -rotate-12 animate-up-down cursor-pointer lg:left-2/3 lg:bottom-0 lg:top-60 lg:w-22 lg:h-22 lg:p-3">
-                    <img loading="lazy" src="assets/image/reactjs.png" alt="tailwind-css-logo"
-                        class=" h-26 p-4 absolute right-52 bg-blue-400/60 rounded-full bottom-48 rotate-12 animate-up-down -z-1 cursor-pointer lg:right-110 lg:bottom-72">
-                    <img loading="lazy" src="assets/image/nodejs-image.png" alt="nodejs-logo"
-                        class="w-30 h-30 absolute right-14 bg-green-300/60 rounded-full bottom-0 p-6 rotate-12 animate-up-down -z-1 cursor-pointer lg:w-15 lg:h-15 lg:p-3 lg:right-140 lg:bottom-20 ">
+                <article
+                    class="relative lg:h-200 lg:w-100 lg:left-40 lg:-top-40 before:content-[''] lg:before:absolute lg:before:top-65 lg:before:right-148 lg:before:w-12 lg:before:h-12 lg:before:bg-blue-300/70 lg:before:bg-[url('/assets/image/vs-code.png')] lg:before:bg-center lg:before:bg-no-repeat lg:before:rounded-full lg:before:bg-size-[50%] ">
+
+                    <img src="assets/image/javascript-logo.png" alt="javascript logo" loading="lazy"
+                        class="tech-icon bg-yellow-300/60 left-10 bottom-20 -rotate-12 lg:left-auto lg:right-95 lg:bottom-0 lg:top-60 lg:w-22 lg:h-22 lg:p-3">
+
+                    <img src="assets/image/reactjs.png" alt="react logo" loading="lazy"
+                        class="tech-icon bg-blue-400/60 right-52 bottom-48 rotate-12 lg:right-70 lg:bottom-52 lg:left-auto lg:top-auto lg:w-32 lg:h-32">
+
+                    <img src="assets/image/nodejs-image.png" alt="nodejs logo" loading="lazy"
+                        class="tech-icon bg-green-300/60 right-14  rotate-12 lg:w-15 lg:h-15 lg:p-3 lg:right-120 lg:bottom-10 lg:left-auto lg:top-auto">
+
                 </article>
             </div>
         </section>
@@ -308,7 +381,7 @@
         </section>
 
 
-        <section class="mt-56 flex-center flex-col font-bold m-auto min-w-screen lg:mt-20">
+        <section class="mt-56 flex-center flex-col font-bold m-auto min-w-screen lg:-mt-20">
             <h3 class="text-6xl">Skills and Experties</h3>
 
             <article class="text-2xl font-semibold flex-center flex-wrap gap-x-36 font-mono w-137.5">
@@ -359,61 +432,63 @@
             </article>
         </section>
 
-
-        <section id="contact_section"
-            class="mt-60 flex-center flex-col lg:pt-20 lg:bg-[#121212] lg:mt-40 lg:mask-linear-from-100% lg:relative">
-            <aside class="text-6xl font-black w-125 mb-25 lg:text-5xl lg:mb-10">
-
-                <p class="text-gray-400 inline">Have a break</p>
-                <img loading="lazy" src="assets/image/coffee-images.png" alt="coffee-break-icon"
-                    class="w-14 inline flex-center pb-4 select-none">
-
-                <p class="inline text-violet-500 text-7xl lg:text-6xl">&</p>
-
-                <p class="text-blue-200 ml-10">Connect to me</p>
-            </aside>
-
-            <div class="flex flex-col items-center lg:flex-row lg:gap-20 lg:before:rounded-full">
-                <aside
-                    class="flex-center border-6 rounded-4xl px-8 text-3xl text-gray-300 font-semibold bg-pink-300/50 w-fit mt-20 lg:px-4 lg:rounded-xl lg:text-xl lg:border-pink-400/30 lg:border-2 lg:w-100 lg:bg-pink-300/30">
-                    <img loading="lazy" src="assets/image/email-image.png" alt="email-icon"
-                        class="w-37.5 select-none lg:w-18">
-                    <p>anujbisth.dev@gmail.com</p>
-                </aside>
-                <aside
-                    class="flex-center border-6 rounded-4xl py-4 px-20 text-3xl text-gray-300 font-semibold bg-violet-300/50 w-fit mt-20 lg:px-0 lg:rounded-xl lg:text-xl lg:border-violet-400/40 lg:border-2 lg:w-80 lg:gap-4 lg:bg-violet-300/30">
-                    <img loading="lazy" src="assets/image/mobile-phone-image.png" alt="mobile-phone-icon"
-                        class="w-25 select-none lg:w-10">
-                    <p>+91 9953656739</p>
-                </aside>
-            </div>
-        </section>
-
         <section>
-            <div id="queries_section"
-                class="text-5xl text-white before:absolute before:content-[''] before:left-10 before:top-10 before:w-48 before:h-48 before:bg-purple-500 before:blur-[160px] before:rounded-full before:-z-10 relative flex-center flex-col lg:bg-[#121212] lg:before:w-72 lg:before:-top-180 lg:before:left-0 lg:before:bg-fuchsia-500/20 lg:before:blur-[400px]">
-                <div class="flex-center mt-37.5 lg:mt-10">
-                    <p class=" text-6xl inline-block font-semibold flex-center mr-1 font-monoton lg:text-5xl">
-                        Any
-                    </p>
-                    <p
-                        class="text-6xl font-bold inline-block text-purple-400 font-monoton lg:text-pink-400 lg:ml-4 lg:text-5xl">
-                        Queries
-                    </p>
-                </div>
-                <aside class="mt-20"><input type="text" placeholder="Your Name"
-                        class="rounded-3xl text-3xl lg:autofill:bg-[#121212] autofill:bg-blue-400/30 bg-blue-400/30 w-200 h-25 px-8 outline-0 lg:bg-blue-400/10 lg:text-xl lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:w-240 lg:h-14 lg:rounded-md lg:placeholder:font-bold lg:p-6">
-                </aside>
-                <aside class="mt-20"><input type="email" placeholder="Your Email"
-                        class="rounded-3xl text-3xl bg-blue-400/30 lg:autofill:bg-[#121212] autofill:bg-blue-400/30 w-200 h-25 px-8 outline-0 lg:bg-blue-400/10 lg:text-xl lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:w-240 lg:h-14 lg:rounded-md lg:placeholder:font-bold lg:p-6">
-                </aside>
-                <aside class="mt-20"><textarea cols="43" placeholder="Your Message"
-                        class="resize-none rounded-3xl text-3xl bg-blue-400/30 autofill:bg-blue-400/30 lg:autofill:bg-[#121212] p-8 outline-0 lg:bg-blue-400/10 lg:text-2xl lg:w-250 lg:h-70 lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:placeholder:font-bold lg:rounded-2xl lg:p-6"></textarea>
+            <div id="contact_section"
+                class="mt-60 flex-center flex-col lg:pt-20 lg:bg-[#121212] lg:mt-40 lg:mask-linear-from-100% lg:relative">
+                <aside class="text-6xl font-black w-125 mb-25 lg:text-5xl lg:mb-10">
+
+                    <p class="text-gray-400 inline">Have a break</p>
+                    <img loading="lazy" src="assets/image/coffee-images.png" alt="coffee-break-icon"
+                        class="w-14 inline flex-center pb-4 select-none">
+
+                    <p class="inline text-violet-500 text-7xl lg:text-6xl">&</p>
+
+                    <p class="text-blue-200 ml-10">Connect to me</p>
                 </aside>
 
-                <button
-                    class="button py-6 text-white/80 px-8 mt-20 mb-20 text-4xl bg-blue-600/70 lg:text-2xl lg:px-10 lg:py-3.5 lg:bg-pink-600/70 hover:bg-pink-700/70"
-                    id="message_send_button">Send Message</button>
+                <div class="flex flex-col items-center lg:flex-row lg:gap-20 lg:before:rounded-full">
+                    <aside
+                        class="flex-center border-6 rounded-4xl px-8 text-3xl text-gray-300 font-semibold bg-pink-300/50 w-fit mt-20 lg:px-4 lg:rounded-xl lg:text-xl lg:border-pink-400/30 lg:border-2 lg:w-100 lg:bg-pink-300/30">
+                        <img loading="lazy" src="assets/image/email-image.png" alt="email-icon"
+                            class="w-37.5 select-none lg:w-18">
+                        <p>anujbisth.dev@gmail.com</p>
+                    </aside>
+                    <aside
+                        class="flex-center border-6 rounded-4xl py-4 px-20 text-3xl text-gray-300 font-semibold bg-violet-300/50 w-fit mt-20 lg:px-0 lg:rounded-xl lg:text-xl lg:border-violet-400/40 lg:border-2 lg:w-80 lg:gap-4 lg:bg-violet-300/30">
+                        <img loading="lazy" src="assets/image/mobile-phone-image.png" alt="mobile-phone-icon"
+                            class="w-25 select-none lg:w-10">
+                        <p>+91 9953656739</p>
+                    </aside>
+                </div>
+            </div>
+
+            <div>
+                <div id="queries_section"
+                    class="text-5xl text-white before:absolute before:content-[''] before:left-10 before:top-10 before:w-48 before:h-48 before:bg-purple-500 before:blur-[160px] before:rounded-full before:-z-10 relative flex-center flex-col lg:bg-[#121212] lg:before:w-72 lg:before:-top-180 lg:before:left-0 lg:before:bg-fuchsia-500/20 lg:before:blur-[400px]">
+
+                    <div class="flex-center mt-37.5 lg:mt-10">
+                        <p class=" text-6xl inline-block font-semibold flex-center mr-1 font-monoton lg:text-5xl">
+                            Any
+                        </p>
+                        <p
+                            class="text-6xl font-bold inline-block text-purple-400 font-monoton lg:text-pink-400 lg:ml-4 lg:text-5xl">
+                            Queries
+                        </p>
+                    </div>
+                    <aside class="mt-20"><input type="text" placeholder="Your Name"
+                            class="rounded-3xl text-3xl lg:autofill:bg-[#121212] autofill:bg-blue-400/30 bg-blue-400/30 w-200 h-25 px-8 outline-0 lg:bg-blue-400/10 lg:text-xl lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:w-240 lg:h-14 lg:rounded-md lg:placeholder:font-bold lg:p-6">
+                    </aside>
+                    <aside class="mt-20"><input type="email" placeholder="Your Email"
+                            class="rounded-3xl text-3xl bg-blue-400/30 lg:autofill:bg-[#121212] autofill:bg-blue-400/30 w-200 h-25 px-8 outline-0 lg:bg-blue-400/10 lg:text-xl lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:w-240 lg:h-14 lg:rounded-md lg:placeholder:font-bold lg:p-6">
+                    </aside>
+                    <aside class="mt-20"><textarea cols="43" placeholder="Your Message"
+                            class="resize-none rounded-3xl text-3xl bg-blue-400/30 autofill:bg-blue-400/30 lg:autofill:bg-[#121212] p-8 outline-0 lg:bg-blue-400/10 lg:text-2xl lg:w-250 lg:h-70 lg:text-pink-600 lg:border-2 lg:border-pink-100/10 lg:placeholder:font-bold lg:rounded-2xl lg:p-6"></textarea>
+                    </aside>
+
+                    <button
+                        class="button py-6 text-white/80 px-8 mt-20 mb-20 text-4xl bg-blue-600/70 lg:text-2xl lg:px-10 lg:py-3.5 lg:bg-pink-600/70 lg:hover:bg-pink-700/70"
+                        id="message_send_button">Send Message</button>
+                </div>
             </div>
         </section>
     </main>
