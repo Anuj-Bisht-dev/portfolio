@@ -12,79 +12,122 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-[#050b18] text-white selection:bg-orange-600/70 lg:bg-[#050512]">
+<body class="bg-[#050b18] text-white selection:bg-orange-600/70 lg:bg-[#050512] lg:m-auto">
 
     <header>
-        <section class="top-0 fixed w-full z-10" id="nav-section">
+        <section id="nav-section" class="fixed top-0 left-0 w-full z-50 lg:w-[75vw] lg:left-1/2 lg:-translate-x-1/2">
+
             <nav
-                class="flex justify-between border-b-2 border-white/10 shadow-[0_10px_40px_rgba(255,255,255,0.1)] px-6 py-2 bg-violet-900/10 backdrop-blur-xl lg:bg-transparent lg:shadow-none lg:px-40 lg:border-0 lg:backdrop-blur-md">
+                class="relative flex items-center justify-between px-4 py-2 border-b-2 border-white/10 bg-violet-900/10 backdrop-blur-xl shadow-[0_10px_40px_rgba(255,255,255,0.04)] lg:px-0 lg:py-2 lg:bg-transparent lg:border-0 lg:shadow-none lg:backdrop-blur-md">
 
-                <div class="leftnav_1">
+                <!-- Logo -->
+                <div class="leftnav_1 shrink-0">
+
+                    <!-- Mobile -->
                     <img loading="lazy" src="assets/image/logo_1.png" alt="portfolio_logo" id="nav-section-image"
-                        class="w-20 h-20 rounded-full border-purple-200 border p-1 cursor-pointer lg:hidden">
+                        class="w-16 h-16 ml-10 rounded-full border border-purple-200 p-1 cursor-pointer sm:w-18 sm:h-18 lg:hidden">
 
+                    <!-- Desktop -->
                     <img src="assets/image/navbar-desktop.jpeg" alt="desktop-navbar-image"
-                        class="hidden lg:block lg:w-12 lg:rounded-full lg:p-1 lg:border-b-3 lg:border-t-3 lg:border-l-3 border-pink-600/70">
+                        class="hidden lg:block lg:w-12 lg:h-12 lg:rounded-full lg:p-1 lg:border-b-3 lg:border-t-3 lg:border-l-3 border-pink-600/70">
                 </div>
+
+
+                <!-- Mobile Title -->
                 <div
-                    class="leftnav_2 text-5xl pt-4 text-white font-dancingScript tracking-[5px] font-bold cursor-pointer lg:hidden">
+                    class="leftnav_2 text-xl text-white font-dancingScript tracking-[2px] font-bold cursor-pointer text-center sm:text-3xl md:text-4xl lg:hidden">
+
                     <h1>Welcome in My Portfolio</h1>
                 </div>
 
-                <div class="lg:hidden">
-                    <button id="navbar_list_button">
-                        <img loading="lazy" src="assets/image/list-dash.svg" alt="menu-icon"
-                            class="bg-blue-600/60 w-12.5 rounded-full p-2 mt-3 animate-one-round cursor-pointer"
-                            id="navbar-default-button">
 
-                        <img loading="lazy" src="assets/image/cross-button.svg" alt="close-menu-icon"
-                            class="bg-blue-600/60 w-12.5 rounded-full mt-3 hidden animate-one-round cursor-pointer"
-                            id="navbar-custom-button">
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden shrink-0 mr-10">
+
+                    <button id="navbar_list_button" type="button" aria-label="Toggle navigation">
+
+                        <!-- Open -->
+                        <img loading="lazy" src="assets/image/list-dash.svg" alt="menu-icon" class="bg-blue-600/60 w-14 h-14 rounded-full p-2
+                        animate-one-round cursor-pointer" id="navbar-default-button">
+
+                        <!-- Close -->
+                        <img loading="lazy" src="assets/image/cross-button.svg" alt="close-menu-icon" class="bg-blue-600/60 w-14 h-14 rounded-full
+                        hidden animate-one-round cursor-pointer" id="navbar-custom-button">
+
                     </button>
+
                 </div>
 
-                <div class="absolute top-24 right-0 lg:relative lg:top-2 lg:right-40">
-                    <div id="navbar_list_elements" class="relative">
-                        <aside
-                            class="text-purple-500 rounded-b-md text-2xl h-60 flex-col flex-center gap-y-3 w-44 -z-1 overflow-hidden cursor-pointer lg:h-auto lg:flex-row lg:overflow-visible lg:text-xl lg:text-pink-600 lg:font-semibold">
-                            <a href="#home-page">
-                                <button class="navbar-button translate-x-40 lg:translate-0" id="nav_home_link">
-                                    <p class=" hidden lg:inline lg:font-extrabold lg:text-amber-50">01 &nbsp;</p>
-                                    Home
-                                </button>
-                            </a>
-                            <a href="#project_section">
-                                <button class="navbar-button translate-x-40 lg:translate-0" id="nav_project_link">
-                                    <p class="hidden lg:inline lg:font-extrabold ">02 &nbsp;</p> Project
-                                </button>
-                            </a>
-                            <a href="#about_section">
-                                <button class="navbar-button translate-x-40 lg:translate-0" id="nav_about_link">
-                                    <p class="hidden lg:inline lg:font-extrabold lg:text-amber-50">03 &nbsp;</p>
-                                    About
-                                </button>
-                            </a>
-                            <a href="#contact_section">
-                                <button class="navbar-button translate-x-40 lg:translate-0" id="nav_contact_link">
-                                    <p class="hidden lg:inline lg:font-extrabold">04 &nbsp;</p> Contact
-                                </button>
-                            </a>
-                        </aside>
-                    </div>
+
+                <!-- Navigation -->
+                <div id="navbar_list_elements" class="absolute top-full left-0 w-full lg:static lg:w-auto">
+
+                    <aside
+                        class=" text-purple-500 text-3xl flex flex-col items-center gap-y-3 w-full py-5 px-2 backdrop-blur-xl overflow-hidden lg:px-0 lg:flex-row lg:items-center lg:gap-x-1 lg:w-auto lg:py-0 lg:bg-transparent lg:backdrop-blur-none lg:border-0 lg:overflow-visible lg:text-xl lg:text-pink-600 lg:font-semibold">
+
+                        <a href="#home-page">
+                            <button class="navbar-button translate-x-40 lg:translate-x-0" id="nav_home_link">
+
+                                <p class="hidden lg:inline lg:font-extrabold lg:text-amber-50">
+                                    01 &nbsp;
+                                </p>
+                                Home
+
+                            </button>
+                        </a>
+
+
+                        <a href="#project_section">
+                            <button class="navbar-button translate-x-40 lg:translate-x-0" id="nav_project_link">
+
+                                <p class="hidden lg:inline lg:font-extrabold">
+                                    02 &nbsp;
+                                </p>
+                                Project
+
+                            </button>
+                        </a>
+
+
+                        <a href="#about_section">
+                            <button class="navbar-button translate-x-40 lg:translate-x-0" id="nav_about_link">
+
+                                <p class="hidden lg:inline lg:font-extrabold lg:text-amber-50">
+                                    03 &nbsp;
+                                </p>
+                                About
+
+                            </button>
+                        </a>
+
+
+                        <a href="#contact_section">
+                            <button class="navbar-button translate-x-40 lg:translate-x-0" id="nav_contact_link">
+
+                                <p class="hidden lg:inline lg:font-extrabold">
+                                    04 &nbsp;
+                                </p>
+                                Contact
+
+                            </button>
+                        </a>
+
+                    </aside>
                 </div>
+
             </nav>
         </section>
     </header>
 
 
     <main>
-        <section class="mt-40 lg:mt-50" id="home-page">
-            <div class="flex flex-col lg:-mb-130 gap-y-16 lg:flex-row lg:mx-40">
+        <section class="mt-60 lg:min-w-[90vw] lg:mx-auto lg:flex lg:justify-center" id="home-page">
+            <div class="flex flex-col lg:-mb-130 gap-y-16 lg:flex-row">
                 <div class="flex flex-col gap-y-10 ml-20 lg:ml-10 lg:relative lg:-top-20 lg:hidden">
                     <aside
                         class="bg-white/70 flex-center w-87.5 h-35 gap-x-4 p-2 rounded-2xl cursor-pointer lg:w-60 lg:h-25">
                         <img loading="lazy" src="assets/image/newoneimg.svg" alt="greeting-icon-hello"
-                            class="w-16 lg:w-14">
+                            class="w-16 h-10 lg:w-14">
                         <div>
                             <h4 class="text-gray-700 text-4xl lg:text-2xl">Hello, I am</h4>
                             <h3 class="text-black font-bold text-6xl flex pl-16 lg:text-4xl">Anuj</h3>
@@ -97,7 +140,7 @@
                     </aside>
                 </div>
 
-                <!-- // for larger screen  -->
+                <!-- for larger screen  -->
                 <div class="large-screen-div">
 
                     <h2 class="lg:text-2xl lg:tracking-tighter lg:uppercase lg:font-extrabold lg:text-pink-600 lg:mb-4">
@@ -107,7 +150,7 @@
                         developer</h1>
                     <h1 class="lg:text-4xl lg:uppercase lg:font-extrabold lg:inline lg:text-pink-600 lg:ml-2">&</h1>
                     <h1 class="lg:text-4xl lg:tracking-tight lg:uppercase lg:font-extrabold lg:text-pink-600 lg:mt-2">
-                        javascript expert .
+                        javascript expert.
                     </h1>
                     <p class="lg:font-semibold lg:text-md lg:mt-3 lg:w-120">I build modern and responsive web
                         applications focused on performance and great UI.
@@ -162,9 +205,9 @@
 
                 <div class="main-portfolio-image cursor-pointer">
                     <img loading="lazy" src="assets/image/mobile_profile_image.png" alt="profile_photo" loading="lazy"
-                        class="h-250 ml-15 drop-shadow-[0_5px_20px_rgba(0,0,0,0.8)] select-none lg:h-200 lg:ml-10 lg:relative lg:-top-40 lg:hidden animate-up-down">
+                        class="h-230 ml-30 drop-shadow-[0_5px_20px_rgba(0,0,0,0.8)] select-none lg:h-200 lg:ml-10 lg:relative lg:-top-40 lg:hidden animate-up-down">
 
-                    <!-- // for larger screen -->
+                    <!-- for smaller screen -->
                     <img loading="lazy" src="assets/image/hero-section-image.png" alt="profile_photo" loading="lazy"
                         class="lg:select-none lg:h-180 lg:ml-30 lg:relative lg:-top-40 hidden lg:block lg:rounded-full">
 
@@ -175,13 +218,13 @@
                 </div>
 
                 <article
-                    class="relative lg:h-200 lg:w-100 lg:left-40 lg:-top-40 before:content-[''] lg:before:absolute lg:before:top-65 lg:before:right-148 lg:before:w-12 lg:before:h-12 lg:before:bg-blue-300/70 lg:before:bg-[url('/assets/image/vs-code.png')] lg:before:bg-center lg:before:bg-no-repeat lg:before:rounded-full lg:before:bg-size-[50%] ">
+                    class="relative lg:h-200 lg:w-100 lg:left-40 lg:-top-40 before:content-[''] lg:before:absolute lg:before:top-65 lg:before:right-148 lg:before:w-12 lg:before:h-12 lg:before:bg-blue-300/70 lg:before:bg-[url('/assets/image/vs-code.png')] lg:before:bg-center lg:before:bg-no-repeat lg:before:rounded-full lg:before:bg-size-[50%]">
 
                     <img src="assets/image/javascript-logo.png" alt="javascript logo" loading="lazy"
                         class="tech-icon bg-yellow-300/60 left-10 bottom-20 -rotate-12 lg:left-auto lg:right-95 lg:bottom-0 lg:top-60 lg:w-22 lg:h-22 lg:p-3">
 
-                    <img src="assets/image/reactjs.png" alt="react logo" loading="lazy"
-                        class="tech-icon bg-blue-400/60 right-52 bottom-48 rotate-12 lg:right-70 lg:bottom-52 lg:left-auto lg:top-auto lg:w-32 lg:h-32">
+                    <img src="assets/image/pgsql.svg" alt="postgress logo" loading="lazy"
+                        class="tech-icon bg-blue-400/60 right-12 bottom-62 rotate-12 lg:right-70 lg:bottom-52 lg:left-auto lg:top-auto lg:w-24 lg:h-24">
 
                     <img src="assets/image/nodejs-image.png" alt="nodejs logo" loading="lazy"
                         class="tech-icon bg-green-300/60 right-14  rotate-12 lg:w-15 lg:h-15 lg:p-3 lg:right-120 lg:bottom-10 lg:left-auto lg:top-auto">
@@ -198,7 +241,7 @@
                     WORK SHOWCASE</h2>
             </div>
 
-            <div class="flex flex-center flex-wrap">
+            <div class="flex-center flex-wrap lg:w-[60vw] lg:m-auto">
 
                 <article class="project_div_class relative overflow-hidden">
                     <div class="project-front-section" onclick="projectFrontClickEffect()">
@@ -317,23 +360,23 @@
 
 
         <section id="about_section"
-            class="mt-44 w-screen overflow-x-clip relative before:absolute before:h-62.5 before:w-62.5 before:bg-fuchsia-600 before:top-0 before:right-0 before:rounded-full before:blur-[400px] cursor-pointer lg:before:bg-pink-500/10 lg:before:w-150 lg:before:h-150 lg:before:-right-40 lg:-top-30">
+            class="mt-44 w-screen overflow-x-clip relative before:absolute before:h-62.5 before:w-62.5 before:bg-fuchsia-600 before:top-0 before:right-0 before:rounded-full before:blur-[400px] cursor-pointer lg:before:bg-pink-500/10 lg:before:w-150 lg:before:h-150 lg:before:-right-40 lg:-top-30 lg:h-280">
             <div class="mb-50 lg:mb-20">
-                <h3 class="flex-center text-[85px] font-bitcount">Know About Me More</h3>
+                <h3 class="text-[85px] ml-15 font-bitcount lg:w-300 lg:m-auto">Know About Me More</h3>
             </div>
-            <div class="relative lg:flex-center lg:right-30">
+            <div class="relative">
                 <div id="oval-image-upper1" class="absolute left-25 top-12.5 -z-1 lg:left-175 lg:top-60">
                     <img loading="lazy" src="assets/image/ovel-image.png" alt="oval-decorative-shape"
                         class="w-187.5 h-90 select-none lg:w-180 lg:h-80">
 
                     <!-- pair 1 -->
-                    <div class="">
+                    <div>
                         <div class="absolute w-6.25 h-6.25 top-7.5 left-32.5 bg-gray-200 rounded-full">
                         </div>
                         <div class="absolute w-1.25 h-45 -top-33.75 left-24.25 bg-gray-200 rounded-full -rotate-z-25">
                         </div>
                         <div class="absolute text-3xl -top-42.5 -left-7.5">
-                            <p>Material UI Shadcn</p>
+                            <p>MongoDB</p>
                         </div>
                     </div>
                 </div>
@@ -364,13 +407,13 @@
                     <div
                         class="absolute w-1.25 h-50 -bottom-15 left-218.75 bg-gray-200 rounded-full rotate-z-10 lg:left-378 lg:top-120">
                     </div>
-                    <div class="absolute text-3xl -bottom-23.75 left-200 lg:left-360 lg:bottom-22">
-                        <p>ReactJs</p>
+                    <div class="absolute text-3xl -bottom-23.75 left-200 lg:left-360 ">
+                        <p>ExpressJS</p>
                     </div>
                 </div>
                 <div id="know-about-circle">
                     <img loading="lazy" src="assets/image/about-section-image.png" alt="about-section-image"
-                        class="w-120 my-40 ml-60 select-none">
+                        class="w-120 my-40 select-none m-auto">
                 </div>
                 <aside class="absolute w-195 top-87.5 ml-12.5 uppercase lg:top-125 lg:ml-45">
                     <p class="text-7xl font-bold font-mono">
@@ -381,6 +424,8 @@
         </section>
 
 
+
+        
         <section class="mt-56 flex-center flex-col font-bold m-auto min-w-screen lg:-mt-20">
             <h3 class="text-6xl">Skills and Experties</h3>
 
@@ -392,9 +437,9 @@
                 </aside>
 
                 <aside class="skills-icon">
-                    <img loading="lazy" src="assets/image/mysql.png" alt="mysql-logo" class="skills-icon-image p-2"
+                    <img loading="lazy" src="assets/image/mongodb.png" alt="mongodb-logo" class="skills-icon-image p-4"
                         onclick="classList.toggle('contrast-150')">
-                    <h5>MySql</h5>
+                    <h5>MongoDB</h5>
                 </aside>
 
                 <aside class="skills-icon">
@@ -404,9 +449,9 @@
                 </aside>
 
                 <aside class="skills-icon">
-                    <img loading="lazy" src="assets/image/Tailwind_CSS.png" alt="tailwind-css-logo"
-                        class="skills-icon-image p-3 py-9 lg:py-5" onclick="classList.toggle('contrast-200')">
-                    <h5>Tailwind CSS</h5>
+                    <img loading="lazy" src="assets/image/tailwindcss.png" alt="tailwind-css-logo"
+                        class="skills-icon-image p-3 py-2 lg:py-2" onclick="classList.toggle('contrast-200')">
+                    <h5>TailwindCSS</h5>
                 </aside>
 
                 <aside class="skills-icon">
@@ -417,16 +462,17 @@
                 </aside>
 
                 <aside class="skills-icon">
-                    <img loading="lazy" src="assets/image/reactjs.png" alt="reactjs-logo" class="skills-icon-image p-3"
+                    <img loading="lazy" src="assets/image/expressjs.png" alt="expressjs"
+                        class="skills-icon-image p-3 contrast-40 hover:contrast-200"
                         onclick="classList.toggle('contrast-200')">
-                    <h5>ReactJs</h5>
+                    <h5>Express</h5>
                 </aside>
 
                 <aside class="skills-icon hidden lg:inline">
-                    <img loading="lazy" src="assets/image/shadcn.png" alt="reactjs-logo"
+                    <img loading="lazy" src="assets/image/pgsql.svg" alt="postgresBD-logo"
                         class="skills-icon-image p-2.5 contrast-50 lg:hover:contrast-200"
                         onclick="classList.toggle('contrast-200')">
-                    <h5>Shadcn</h5>
+                    <h5>PostgresDB</h5>
                 </aside>
 
             </article>

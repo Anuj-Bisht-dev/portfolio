@@ -60,7 +60,7 @@ messageSendingBtn.addEventListener("click", () => {
         queriesSection.classList.add("pt-20");
         queriesSection.classList.add("pb-40");
         queriesSection.innerText = "Thank You For Your Valuable Time!";
-    }, 2000);
+    }, 2000);``
 })
 
 
