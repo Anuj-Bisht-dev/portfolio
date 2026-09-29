@@ -31,23 +31,6 @@ navbarCustomBtn.addEventListener("click", () => {
     navbarCustomBtn.classList.toggle("hidden");
 });
 
-const projectFrontSections = document.querySelectorAll(".project-front-section");
-const projectBackSections = document.querySelectorAll(".project-back-section");
-
-projectFrontSections.forEach((frontSection, index) => {
-    const backSection = projectBackSections[index];
-
-    frontSection.addEventListener("click", () => {
-        frontSection.classList.toggle("translate-y-[300px]");
-        backSection.classList.toggle("translate-x-[0px]");
-    });
-
-    backSection.addEventListener("click", () => {
-        frontSection.classList.toggle("translate-y-[300px]");
-        backSection.classList.toggle("translate-x-[0px]");
-    });
-});
-
 const messageSendingBtn = document.getElementById("message_send_button");
 const queriesSection = document.getElementById("queries_section");
 
